@@ -35,7 +35,7 @@
 										<a href="index-2.html"><img src="images/logo-full.png" alt=""></a>
 									</div>
                                     <h4 class="text-center mb-4">Sign in your account</h4>
-                                    <form action="https://omah.dexignzone.com/xhtml/index.html">
+                                    <form action="{{post.login}}" method="post>
                                         <div class="form-group">
                                             <label class="mb-1"><strong>Email</strong></label>
                                             <input type="email" class="form-control" value="hello@example.com">
@@ -48,20 +48,15 @@
                                             <div class="form-group">
                                                <div class="form-check custom-checkbox ms-1">
 													<input type="checkbox" class="form-check-input" id="basic_checkbox_1">
-													<label class="custom-control-label" for="basic_checkbox_1">Remember my preference</label>
+													<label class="custom-control-label" for="basic_checkbox_1">Remember me</label>
 												</div>
-                                            </div>
-                                            <div class="form-group">
-                                                <a href="page-forgot-password.html">Forgot Password?</a>
                                             </div>
                                         </div>
                                         <div class="text-center">
                                             <button type="submit" class="btn btn-primary btn-block">Sign Me In</button>
                                         </div>
                                     </form>
-                                    <div class="new-account mt-3">
-                                        <p>Don't have an account? <a class="text-primary" href="page-register.html">Sign up</a></p>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -84,5 +79,4 @@
 </body>
 
 
-<!-- Mirrored from omah.dexignzone.com/xhtml/page-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Aug 2023 15:40:17 GMT -->
 </html>
