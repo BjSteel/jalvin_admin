@@ -35,14 +35,14 @@
 										<a href="index-2.html"><img src="{{asset('images/logo-full.png') }}" alt=""></a>
 									</div>
                                     <h4 class="text-center mb-4">Sign in your account</h4>
-                                    <form action="{{post.login}}" method="post>
+                                    <form action="{{route('auth.login')}}" method="post">
                                         <div class="form-group">
                                             <label class="mb-1"><strong>Email</strong></label>
-                                            <input type="email" class="form-control" value="hello@example.com">
+                                            <input type="email" name="email" class="form-control" value="">
                                         </div>
                                         <div class="form-group">
                                             <label class="mb-1"><strong>Password</strong></label>
-                                            <input type="password" class="form-control" value="Password">
+                                            <input type="password" name="password" class="form-control" value="">
                                         </div>
                                         <div class="form-row d-flex justify-content-between mt-4 mb-2">
                                             <div class="form-group">
