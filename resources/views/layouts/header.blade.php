@@ -15,15 +15,16 @@
 	<meta name="format-detection" content="telephone=no">
     <title>Jalvin Homes Admin Dashboard</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/Jalvinheadlogo.png">
-    <link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/Jalvinheadlogo.png')}}">
+    <link href="{{asset('vendor/jqvmap/css/jqvmap.min.css')}}" rel="stylesheet">
 	<!-- Vectormap -->
-    <link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
+    <link href="{{asset('vendor/jqvmap/css/jqvmap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('vendor/bootstrap-select/dist/css/bootstrap-select.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
+	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+	<link href="{{asset('vendor/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
     <link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-	<link href="../../cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
-	<link href="vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
-
+    	<link href="vendor/dropzone/dist/dropzone.css" rel="stylesheet">
 </head>
 <body>
 
@@ -50,8 +51,8 @@
             Nav header start
         ***********************************-->
         <div class="nav-header">
-            <a href="index.html" class="brand-logo">
-                <img class="logo-abbr" src="images/Jalvinheadlogo.png" alt="">
+            <a href="{{route('view.dashboard') }}" class="brand-logo">
+                <img class="logo-abbr" src="{{asset('images/Jalvinheadlogo.png')}}" alt="">
             </a>
 
             <div class="nav-control">
@@ -97,7 +98,7 @@
 										<span class="text-black">Jalvin Barap</span>
 										<p class="fs-12 mb-0">Admin</p>
 									</div>
-                                    <img src="images/profile/17.jpg" width="20" alt=""/>
+                                    <img src="{{asset('images/profile/17.jpg')}}" width="20" alt=""/>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <a href="app-profile.html" class="dropdown-item ai-icon">
@@ -108,7 +109,7 @@
                                         <svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                                         <span class="ms-2">Inbox </span>
                                     </a>
-                                    <a href="page-login.html" class="dropdown-item ai-icon">
+                                    <a href="{{route('auth.logout')}}" class="dropdown-item ai-icon">
                                         <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
                                         <span class="ms-2">Logout </span>
                                     </a>
@@ -129,20 +130,20 @@
         <div class="deznav">
             <div class="deznav-scroll">
 				<ul class="metismenu" id="menu">
-                    <li><a class="has-arrow ai-icon" href="index.html" aria-expanded="false">
+                    <li><a class="has-arrow ai-icon" href="{{route('view.dashboard') }}" aria-expanded="false">
 							<i class="flaticon-dashboard-1"></i>
 							<span class="nav-text">Dashboard</span>
 						</a>
                         <ul aria-expanded="false">
-							<li><a href="index.html">Dashboard</a></li>
+							<li><a href="{{route('view.dashboard') }}">Dashboard</a></li>
 						</ul>
                     </li>
-                    <li><a class="has-arrow ai-icon" href="add-property.html" aria-expanded="false">
+                    <li><a class="has-arrow ai-icon" href="{{route('properties.add') }}" aria-expanded="false">
 							<i class="flaticon-app"></i>
 							<span class="nav-text">Add Properties</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="add-property.html" aria-expanded="false">Add Properties</a>
+                            <li><a href="{{route('properties.add') }}" >Add Properties</a>
                             </li>
                         </ul>
                     </li>
@@ -157,7 +158,7 @@
                 </ul>
 				
 				<div class="copyright">
-					<p><strong>Jalvin Homes Dashboard</strong><script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved</p>
+					<p><strong>Jalvin Homes Dashboard</strong><script data-cfasync="false" src="https://cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved</p>
 					<p>by Reals Tech</p>
 				</div>
 			</div>
@@ -170,7 +171,7 @@
 
         <div class="footer">
             <div class="copyright">
-                <p>Copyright © Designed &amp; Developed by <a href="#" target="_blank">Reals Tech</a> <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script></p>
+                <p>Copyright © Designed &amp; Developed by <a href="#" target="_blank">Reals Tech</a> <script data-cfasync="false" src="https://cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script></p>
             </div>
         </div>
         <!--**********************************
@@ -195,26 +196,26 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
-    <script src="vendor/global/global.min.js"></script>
-	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-	<script src="vendor/chart.js/Chart.bundle.min.js"></script>
-    <script src="js/custom.min.js"></script>
-	<script src="js/deznav-init.js"></script>
-	<script src="vendor/owl-carousel/owl.carousel.js"></script>
+    <script src="{{asset('vendor/global/global.min.js')}}"></script>
+	<script src="{{asset('vendor/bootstrap-select/dist/js/bootstrap-select.min.js')}}"></script>
+	<script src="{{asset('vendor/chart.js/Chart.bundle.min.js')}}"></script>
+    <script src="{{asset('js/custom.min.js')}}"></script>
+	<script src="{{asset('js/deznav-init.js')}}"></script>
+	<script src="{{asset('vendor/owl-carousel/owl.carousel.js')}}"></script>
 		
 	<!-- Vectormap -->
-    <script src="vendor/jqvmap/js/jquery.vmap.min.js"></script>
-    <script src="vendor/jqvmap/js/jquery.vmap.world.js"></script>
+    <script src="{{asset('vendor/jqvmap/js/jquery.vmap.min.js')}}"></script>
+    <script src="{{asset('vendor/jqvmap/js/jquery.vmap.world.js')}}"></script>
 	
 	<!-- Chart piety plugin files -->
-    <script src="vendor/peity/jquery.peity.min.js"></script>
+    <script src="{{asset('vendor/peity/jquery.peity.min.js')}}"></script>
 	
 	<!-- Apex Chart -->
-	<script src="vendor/apexchart/apexchart.js"></script>
+	<script src="{{asset('vendor/apexchart/apexchart.js')}}"></script>
 	
 	<!-- Dashboard 1 -->
-	<script src="js/dashboard/dashboard-1.js"></script>
-	
+	<script src="{{asset('js/dashboard/dashboard-1.js')}}"></script>
+	<script src="{{asset('vendor/dropzone/dist/dropzone.js')}}"></script>
 	<script>
 		function carouselReview(){
 			/*  testimonial one function by = owl.carousel.js */
@@ -262,5 +263,5 @@
 	
 </body>
 
-<!-- Mirrored from omah.dexignzone.com/xhtml/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Aug 2023 15:40:00 GMT -->
+
 </html>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::match(['get', 'post'], '/login', 'AuthController@login')->name('auth.login');
 Route::match(['get', 'post'], '/', 'AuthController@login')->name('auth.login');
+
+Route::group(['middleware' => ['auth']], function(){
+    Route::get('/dashboard', 'DashboardController@index')->name('view.dashboard');
+Route::get('/logout', 'AuthController@logout')->name('auth.logout');
+    //Properties Controller
+    Route::match(['get','post'], '/add-property', 'PropertiesController@add')->name('properties.add');
+});

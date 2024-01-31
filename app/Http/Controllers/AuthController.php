@@ -51,7 +51,7 @@ class AuthController extends Controller
             if(Auth::attempt($credentials, ($request->remember == 'on') ? true : false))
             {
                 $request->session()->regenerate();
-                return redirect()->route('view.index')
+                return redirect()->route('view.dashboard')
                     ->withSuccess('You have successfully logged in!');
             }
 

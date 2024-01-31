@@ -33,19 +33,27 @@
 										<a href="index-2.html"><img src="{{asset('images/logo-full.png') }}" alt=""></a>
 									</div>
                                     <h4 class="text-center mb-4">Sign in your account</h4>
+                                    @if (count($errors) > 0)
+                @foreach ($errors->all() as $error)
+                    <div class="alert-danger text-center">
+                        <strong>{{ $error }}</strong>
+                    </div>
+                @endforeach
+            @endif
                                     <form action="{{route('auth.login')}}" method="post">
-                                        <div class="form-group">
+                                        @csrf
+                                    <div class="form-group">
                                             <label class="mb-1"><strong>Email</strong></label>
-                                            <input type="email" name="email" class="form-control" value="">
+                                            <input type="email" name="email" class="form-control" value="info@jalvin.com">
                                         </div>
                                         <div class="form-group">
                                             <label class="mb-1"><strong>Password</strong></label>
-                                            <input type="password" name="password" class="form-control" value="">
+                                            <input type="password" name="password" class="form-control" value="lordisgood">
                                         </div>
                                         <div class="form-row d-flex justify-content-between mt-4 mb-2">
                                             <div class="form-group">
                                                <div class="form-check custom-checkbox ms-1">
-													<input type="checkbox" class="form-check-input" id="basic_checkbox_1">
+													<input type="checkbox" class="form-check-input" id="remember" value ="on" checked name="remember">
 													<label class="custom-control-label" for="basic_checkbox_1">Remember me</label>
 												</div>
                                             </div>
@@ -73,7 +81,15 @@
 	<script src="{{asset('vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
     <script src="{{asset('js/custom.min.js') }}"></script>
     <script src="{{asset('js/deznav-init.js') }}"></script>
-
+    <script>
+	$('#remember').change(function() {
+        if($('#remember').is(':checked') == true){
+            $('#remember').val('on');
+        }else{
+            $('#remember').val('off');
+        }
+    });
+</script>
 </body>
 
 
