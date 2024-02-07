@@ -255,59 +255,59 @@
 															</div>
 	
 															<div class="item">
-																<input type="checkbox" class="my-checkbox" value="0" name="lagoon_front_view	`"> <span>lagoon front view</span>
+																<input type="checkbox" class="my-checkbox" value="0" name="lagoon_front_view"> <span>lagoon front view</span>
 															</div>
 	
 															<div class="item">
-																<input type="checkbox"> <span>fully furnished</span>
+																<input type="checkbox" class="my-checkbox" value="0" name="fully_furnished"> <span>fully furnished</span>
 															</div>
 	
 															<div class="item">
-																<input type="checkbox"> <span>air conditioning</span>
+																<input type="checkbox" class="my-checkbox" value="0" name="air_conditioning"> <span>air conditioning</span>
 															</div>
 	
 															<div class="item">
-																<input type="checkbox"> <span>chilren's playground</span>
+																<input type="checkbox" class="my-checkbox" value="0" name="shildren_playgroud"> <span>chilren's playground</span>
 															</div>
 	
 															<div class="item">
-																<input type="checkbox"> <span>barbeque</span>
+																<input type="checkbox" class="my-checkbox" value="0" name="barbeque"> <span>barbeque</span>
 															</div>
 	
 															<div class="item">
-																<input type="checkbox"> <span>spacious compound</span>
+																<input type="checkbox" class="my-checkbox" value="0" name="spacious_compound"> <span>spacious compound</span>
 															</div>
 	
 															<div class="item">
-																<input type="checkbox"> <span>estate lounge</span>
+																<input type="checkbox" class="my-checkbox" value="0" name="estate_lounge"> <span>estate lounge</span>
 															</div>
 	
 															<div class="item">
-																<input type="checkbox"> <span>close to landmark</span>
+																<input type="checkbox" class="my-checkbox" value="0" name="close_to_landmark"> <span>close to landmark</span>
 															</div>
 	
 															<div class="item">
-																<input type="checkbox"> <span>smart home</span>
+																<input type="checkbox" class="my-checkbox" value="0" name="smart_home"> <span>smart home</span>
 															</div>
 	
 															<div class="item">
-																<input type="checkbox"> <span>dry land</span>
+																<input type="checkbox" class="my-checkbox" value="0" name="category"> <span>dry land</span>
 															</div>
 	
 															<div class="item">
-																<input type="checkbox"> <span>wet land</span>
+																<input type="checkbox"  class="my-checkbox" value="0" name="wet_land"> <span>wet land</span>
 															</div>
 	
 															<div class="item">
-																<input type="checkbox"> <span>goverment approved</span>
+																<input type="checkbox" class="my-checkbox" value="0" name="government_approved"> <span>goverment approved</span>
 															</div>
 	
 															<div class="item">
-																<input type="checkbox"> <span>with c of o</span>
+																<input type="checkbox" class="my-checkbox" value="0" name="with_c_of_o"> <span>with c of o</span>
 															</div>
 	
 															<div class="item">
-																<input type="checkbox"> <span>gate house</span>
+																<input type="checkbox" class="my-checkbox" value="0" name="gate_house"> <span>gate house</span>
 															</div>
 	
 														</div>
