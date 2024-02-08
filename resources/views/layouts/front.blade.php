@@ -36,13 +36,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"> -->
-<link rel="stylesheet" href="{{ asset('fonts/icomoon/style.css') }}">
-<link rel="stylesheet" href="{{ asset('fonts/flaticon/font/flaticon.css') }}">
-<link rel="stylesheet" href="{{ asset('css/tiny-slider.css') }}">
-<link rel="stylesheet" href="{{ asset('css/aos.css') }}">
-<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" href="@admin_ass('fonts/icomoon/style.css')">
+<link rel="stylesheet" href="@admin_ass('fonts/flaticon/font/flaticon.css')">
+<link rel="stylesheet" href="@admin_ass('css/tiny-slider.css')">
+<link rel="stylesheet" href="@admin_ass('css/aos.css')">
+<link rel="stylesheet" href="@admin_ass('css/style.css')">
 <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-<link rel="icon" href="{{ asset('images/Jalvinheadlogo.png')  }}">
+<link rel="icon" href="@admin_ass('images/Jalvinheadlogo.png')  }}">
 <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 <title>Jalvin Homes</title>
 <script nonce="675690b8-5ef1-4dbf-9f7b-17562acf043e">(function(w,d){!function(f,g,h,i){f[h]=f[h]||{};f[h].executed=[];f.zaraz={deferred:[],listeners:[]};f.zaraz.q=[];f.zaraz._f=function(j){return function(){var k=Array.prototype.slice.call(arguments);f.zaraz.q.push({m:j,a:k})}};for(const l of["track","set","debug"])f.zaraz[l]=f.zaraz._f(l);f.zaraz.init=()=>{var m=g.getElementsByTagName(i)[0],n=g.createElement(i),o=g.getElementsByTagName("title")[0];o&&(f[h].t=g.getElementsByTagName("title")[0].text);f[h].x=Math.random();f[h].w=f.screen.width;f[h].h=f.screen.height;f[h].j=f.innerHeight;f[h].e=f.innerWidth;f[h].l=f.location.href;f[h].r=g.referrer;f[h].k=f.screen.colorDepth;f[h].n=g.characterSet;f[h].o=(new Date).getTimezoneOffset();if(f.dataLayer)for(const s of Object.entries(Object.entries(dataLayer).reduce(((t,u)=>({...t[1],...u[1]})))))zaraz.set(s[0],s[1],{scope:"page"});f[h].q=[];for(;f.zaraz.q.length;){const v=f.zaraz.q.shift();f[h].q.push(v)}n.defer=!0;for(const w of[localStorage,sessionStorage])Object.keys(w||{}).filter((y=>y.startsWith("_zaraz_"))).forEach((x=>{try{f[h]["z_"+x.slice(7)]=JSON.parse(w.getItem(x))}catch{f[h]["z_"+x.slice(7)]=w.getItem(x)}}));n.referrerPolicy="origin";n.src="../../cdn-cgi/zaraz/sd0d9.js?z="+btoa(encodeURIComponent(JSON.stringify(f[h])));m.parentNode.insertBefore(n,m)};["complete","interactive"].includes(g.readyState)?zaraz.init():f.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
@@ -51,7 +51,7 @@
 <div class="main-header" id="headers">
 		<header>
 			<div class="header-content">
-				<div class="logo"><a href="index.html"><img src="{{ asset('images/jalvinlogofooter.png')  }}" alt=""></a></div>
+				<div class="logo"><a href="index.html"><img src="@admin_ass('images/jalvinlogofooter.png')  }}" alt=""></a></div>
 	
 				<div class="nav-links">
 					<li><a href="index.html" class="nav-item">home</a></li>
@@ -100,14 +100,14 @@
 			<div class="row">
 				<div class="footer-contact-main">
 					<div class="footer-contact">
-						<div class="image"><img src="{{ asset('images/icons8-envelope-50.png')  }}" alt=""></div>
+						<div class="image"><img src="@admin_ass('images/icons8-envelope-50.png')  }}" alt=""></div>
 						<div class="context">
 							<p>email</p>
 							<p><a href="mail:jalvinbm707@gmail.com">jalvinbm707@gmail.com</a></p>
 							</div>
 						</div>
 					<div class="footer-contact">
-						<div class="image"><img src="{{ asset('images/icons8-phone-50.png')  }}" alt=""></div>
+						<div class="image"><img src="@admin_ass('images/icons8-phone-50.png')  }}" alt=""></div>
 						<div class="context">
 							<p>phone</p>
 							<p><a href="tel:+2349021348995">+2349021348995</a></p>
@@ -115,7 +115,7 @@
 						</div>
 
 						<div class="footer-contact">
-						<div class="image"><img src="{{ asset('images/icons8-map-80.png')  }}" alt=""></div>
+						<div class="image"><img src="@admin_ass('images/icons8-map-80.png')  }}" alt=""></div>
 						<div class="context">
 							<p>address</p>
 							<p>1011 PARK LANE GREENSBORO, GA 30642</p>
@@ -128,7 +128,7 @@
 <div class="row mt-5">
 	<div class="col-lg-3 col-xs-12 mb-4">
 		<div class="footer-logo mb-4">
-				<a href="index.html"><img src="{{ asset('images/jalvinlogofooter.png')  }}" alt=""></a>
+				<a href="index.html"><img src="@admin_ass('images/jalvinlogofooter.png')  }}" alt=""></a>
 				</div>
 		</div>
 
@@ -165,20 +165,20 @@
 <span class="visually-hidden">Loading...</span>
 </div>
 </div>
-<script src="{{ asset('js/pagination.js') }}"></script>
-<script src="{{ asset('js/main-slider.js') }}"></script>
+<script src="@admin_ass('js/pagination.js')"></script>
+<script src="@admin_ass('js/main-slider.js')"></script>
 <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-<script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+<script src="@admin_ass('js/bootstrap.bundle.min.js')"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ asset('js/tiny-slider.js') }}"></script>
+<script src="@admin_ass('js/bootstrap.bundle.min.js')"></script>
+<script src="@admin_ass('js/tiny-slider.js')"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-<script src="{{ asset('js/app.js') }}"></script>
-<script src="{{ asset('js/aos.js') }}"></script>
-<script src="{{ asset('js/navbar.js') }}"></script>
-<script src="{{ asset('js/counter.js') }}"></script>
-<script src="{{ asset('js/custom.js') }}"></script>
+<script src="@admin_ass('js/app.js')"></script>
+<script src="@admin_ass('js/aos.js')"></script>
+<script src="@admin_ass('js/navbar.js')"></script>
+<script src="@admin_ass('js/counter.js')"></script>
+<script src="@admin_ass('js/custom.js')"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 <script>

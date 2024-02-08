@@ -16,7 +16,7 @@
     <title>Omah - Property Bootstrap Admin Dashboard</title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <link href="{{asset('css/style.css') }}" rel="stylesheet">
+    <link href="@admin_ass('css/style.css')" rel="stylesheet">
 
 </head>
 
@@ -30,7 +30,7 @@
                             <div class="col-xl-12">
                                 <div class="auth-form">
 									<div class="text-center mb-3">
-										<a href="index-2.html"><img src="{{asset('images/logo-full.png') }}" alt=""></a>
+										<a href="index-2.html"><img src="@admin_ass('images/logo-full.png')" alt=""></a>
 									</div>
                                     <h4 class="text-center mb-4">Sign in your account</h4>
                                     @if (count($errors) > 0)
@@ -77,10 +77,10 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
-    <script src="{{asset('vendor/global/global.min.js') }}"></script>
-	<script src="{{asset('vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
-    <script src="{{asset('js/custom.min.js') }}"></script>
-    <script src="{{asset('js/deznav-init.js') }}"></script>
+    <script src="@admin_ass('vendor/global/global.min.js')"></script>
+	<script src="@admin_ass('vendor/bootstrap-select/dist/js/bootstrap-select.min.js')"></script>
+    <script src="@admin_ass('js/custom.min.js')"></script>
+    <script src="@admin_ass('js/deznav-init.js')"></script>
     <script>
 	$('#remember').change(function() {
         if($('#remember').is(':checked') == true){
