@@ -9,7 +9,7 @@ class PropertiesController extends Controller
 {
     public function add(Request $request) {
         if($request->isMethod('get')){
-            return view('properties.add');
+            return view('backend.properties.add');
         }else{
             $validator = Validator::make($request->all(), [
                 'name'             => 'required|max:255',

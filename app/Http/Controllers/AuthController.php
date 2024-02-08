@@ -41,7 +41,7 @@ class AuthController extends Controller
     public function login(Request $request)
     {
         if(($request->isMethod('get'))){
-            return view('auth.login');
+            return view('backend.auth.login');
         }else{
             $credentials = $request->validate([
                 'email' => 'required|email',
