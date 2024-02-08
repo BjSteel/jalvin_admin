@@ -1,13 +1,6 @@
-@extends('backend.layouts.header')
+@extends('layouts.back')
 @section('content')
-        <!--**********************************
-            Sidebar end
-        ***********************************-->
-		
-		<!--**********************************
-            Content body start
-        ***********************************-->
-        <div class="content-body">
+       <div class="content-body">
             <!-- row -->
 			<div class="container-fluid">
                 <div class="form-head d-md-flex mb-sm-4 mb-3 align-items-start">
