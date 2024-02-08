@@ -15,14 +15,14 @@
 	<meta name="format-detection" content="telephone=no">
     <title>Jalvin Homes Admin Dashboard</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('admin/images/Jalvinheadlogo.png')}}">
-    <link href="{{asset('admin/vendor/jqvmap/css/jqvmap.min.css')}}" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="@admin_ass('admin/images/Jalvinheadlogo.png')">
+    <link href="@admin_ass('admin/vendor/jqvmap/css/jqvmap.min.css')" rel="stylesheet">
 	<!-- Vectormap -->
-    <link href="{{asset('admin/vendor/jqvmap/css/jqvmap.min.css')}}" rel="stylesheet">
-    <link href="{{asset('admin/vendor/bootstrap-select/dist/css/bootstrap-select.min.css')}}" rel="stylesheet">
-    <link href="{{asset('admin/css/style.css')}}" rel="stylesheet">
+    <link href="@admin_ass('admin/vendor/jqvmap/css/jqvmap.min.css')" rel="stylesheet">
+    <link href="@admin_ass('admin/vendor/bootstrap-select/dist/css/bootstrap-select.min.css')" rel="stylesheet">
+    <link href="@admin_ass('admin/css/style.css')" rel="stylesheet">
 	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
-	<link href="{{asset('admin/vendor/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
+	<link href="@admin_ass('admin/vendor/owl-carousel/owl.carousel.css')" rel="stylesheet">
     <link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     	<link href="vendor/dropzone/dist/dropzone.css" rel="stylesheet">
 </head>
@@ -52,7 +52,7 @@
         ***********************************-->
         <div class="nav-header">
             <a href="{{route('view.dashboard') }}" class="brand-logo">
-                <img class="logo-abbr" src="{{asset('admin/images/Jalvinheadlogo.png')}}" alt="">
+                <img class="logo-abbr" src="@admin_ass('admin/images/Jalvinheadlogo.png')" alt="">
             </a>
 
             <div class="nav-control">
@@ -98,7 +98,7 @@
 										<span class="text-black">Jalvin Barap</span>
 										<p class="fs-12 mb-0">Admin</p>
 									</div>
-                                    <img src="{{asset('admin/images/profile/17.jpg')}}" width="20" alt=""/>
+                                    <img src="@admin_ass('admin/images/profile/17.jpg')" width="20" alt=""/>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <a href="app-profile.html" class="dropdown-item ai-icon">
@@ -109,7 +109,7 @@
                                         <svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                                         <span class="ms-2">Inbox </span>
                                     </a>
-                                    <a href="{{route('auth.logout')}}" class="dropdown-item ai-icon">
+                                    <a href="{{route('auth.logout')" class="dropdown-item ai-icon">
                                         <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
                                         <span class="ms-2">Logout </span>
                                     </a>
@@ -196,26 +196,26 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
-    <script src="{{asset('admin/vendor/global/global.min.js')}}"></script>
-	<script src="{{asset('admin/vendor/bootstrap-select/dist/js/bootstrap-select.min.js')}}"></script>
-	<script src="{{asset('admin/vendor/chart.js/Chart.bundle.min.js')}}"></script>
-    <script src="{{asset('admin/js/custom.min.js')}}"></script>
-	<script src="{{asset('admin/js/deznav-init.js')}}"></script>
-	<script src="{{asset('admin/vendor/owl-carousel/owl.carousel.js')}}"></script>
+    <script src="@admin_ass('admin/vendor/global/global.min.js')"></script>
+	<script src="@admin_ass('admin/vendor/bootstrap-select/dist/js/bootstrap-select.min.js')"></script>
+	<script src="@admin_ass('admin/vendor/chart.js/Chart.bundle.min.js')"></script>
+    <script src="@admin_ass('admin/js/custom.min.js')"></script>
+	<script src="@admin_ass('admin/js/deznav-init.js')"></script>
+	<script src="@admin_ass('admin/vendor/owl-carousel/owl.carousel.js')"></script>
 		
 	<!-- Vectormap -->
-    <script src="{{asset('admin/vendor/jqvmap/js/jquery.vmap.min.js')}}"></script>
-    <script src="{{asset('admin/vendor/jqvmap/js/jquery.vmap.world.js')}}"></script>
+    <script src="@admin_ass('admin/vendor/jqvmap/js/jquery.vmap.min.js')"></script>
+    <script src="@admin_ass('admin/vendor/jqvmap/js/jquery.vmap.world.js')"></script>
 	
 	<!-- Chart piety plugin files -->
-    <script src="{{asset('admin/vendor/peity/jquery.peity.min.js')}}"></script>
+    <script src="@admin_ass('admin/vendor/peity/jquery.peity.min.js')"></script>
 	
 	<!-- Apex Chart -->
-	<script src="{{asset('admin/vendor/apexchart/apexchart.js')}}"></script>
+	<script src="@admin_ass('admin/vendor/apexchart/apexchart.js')"></script>
 	
 	<!-- Dashboard 1 -->
-	<script src="{{asset('admin/js/dashboard/dashboard-1.js')}}"></script>
-	<script src="{{asset('admin/vendor/dropzone/dist/dropzone.js')}}"></script>
+	<script src="@admin_ass('admin/js/dashboard/dashboard-1.js')"></script>
+	<script src="@admin_ass('admin/vendor/dropzone/dist/dropzone.js')"></script>
 	<script>
 		function carouselReview(){
 			/*  testimonial one function by = owl.carousel.js */
