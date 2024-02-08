@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::match(['get', 'post'], '/', 'FrontendConroller@index')->name('auth.login');
+Route::match(['get', 'post'], '/', 'FrontendConroller@index')->name('view.home');
 
 
 Route::match(['get', 'post'], '/admin/login', 'AuthController@login')->name('auth.login');
