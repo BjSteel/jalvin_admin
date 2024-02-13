@@ -16,7 +16,7 @@ class PropertiesController extends Controller
             $validator = Validator::make($request->all(), [
                 'name'             => 'required',
                 'address'             => 'required',
-                'price'           => 'required', 'float',
+                'price'           => 'required|between:0,99.99',
                 'city'           => 'required',
                 'country'           => 'required',
                 'beds'           => 'required',
@@ -240,7 +240,4 @@ class PropertiesController extends Controller
             return redirect()->route('menu.list')->with('success', 'Property added successfully');
         }
     }
-
-
-
 }
