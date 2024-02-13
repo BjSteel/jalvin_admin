@@ -82,7 +82,143 @@ class PropertiesController extends Controller
             }
 
 
-            $categories = array();
+            $property_features = array();
+            
+                if($request->input('fitted_kitchen') == 1){array_push($property_features, 'Fitted Kitchen With Accessories');}
+                if($request->input('24_hour_security') == 1){array_push($property_features, '24 Hour Security');}
+            
+
+            
+                if($request->input('modern_pop_ceiling') == 1){array_push($property_features, 'Modern Day POP Ceiling');}
+            
+
+            
+                if($request->input('detailed_finishing') == 1){array_push($property_features, 'Detailed Finishing');}
+            
+
+            
+                if($request->input('wardrobes') == 1){array_push($property_features, 'Wardrobes');}
+            
+
+            
+                if($request->input('jacuzzi') == 1){array_push($property_features, 'jacuzzi');}
+            
+
+            
+                if($request->input('cctv') == 1){array_push($property_features, 'CCTV');}
+            
+
+            
+                if($request->input('automated_lights') == 1){array_push($property_features, 'Automated Light');}
+            
+
+            
+                if($request->input('water_heater') == 1){array_push($property_features, 'water heater');}
+            
+
+            
+                if($request->input('clean_water') == 1){array_push($property_features, 'clean water');}
+            
+
+            
+                if($request->input('heat_extractor') == 1){array_push($property_features, 'Heat Extractor');}
+            
+
+            
+                if($request->input('ample_parking_space') == 1){array_push($property_features, 'Ample Parking Space');}
+            
+
+            
+                if($request->input('gym') == 1){array_push($property_features, 'gym');}
+            
+
+            
+                if($request->input('cinema') == 1){array_push($property_features, 'cinema');}
+            
+
+            
+                if($request->input('swimming_pool') == 1){array_push($property_features, 'swimming pool');}
+            
+
+            
+                if($request->input('boys_quaters') == 1){array_push($property_features, 'comes with boys quarters');}
+            
+
+            
+                if($request->input('elevator') == 1){array_push($property_features, 'elevator');}
+            
+
+            
+                if($request->input('installed_soundsystem') == 1){array_push($property_features, 'installed bluetooth speakers');}
+            
+
+            
+                if($request->input('beach_front') == 1){array_push($property_features, 'beach front');}
+            
+
+            
+                if($request->input('gate_house') == 1){array_push($property_features, 'Gate house');}
+            
+            
+                if($request->input('good_drainage') == 1){array_push($property_features, 'Good drainage');}
+            
+
+            
+                if($request->input('lagoon_front_view') == 1){array_push($property_features, 'lagoon front view');}
+            
+
+            
+                if($request->input('fully_furnished') == 1){array_push($property_features, 'fully furnished');}
+            
+
+            
+                if($request->input('air_conditioning') == 1){array_push($property_features, 'air conditioning');}
+            
+
+            
+                if($request->input('shildren_playgroud') == 1){array_push($property_features, 'chilren\'s playground');}
+            
+
+            
+                if($request->input('barbeque') == 1){array_push($property_features, 'barbeque');}
+            
+
+            
+                if($request->input('spacious_compound') == 1){array_push($property_features, 'spacious compound');}
+            
+
+            
+                if($request->input('estate_lounge') == 1){array_push($property_features, 'estate lounge');}
+            
+
+            
+                if($request->input('close_to_landmark') == 1){array_push($property_features, 'close to landmark');}
+            
+
+            
+                if($request->input('smart_home') == 1){array_push($property_features, 'smart home');}
+            
+
+            
+                if($request->input('category') == 1){array_push($property_features, 'dry land');}
+            
+
+            
+                if($request->input('wet_land') == 1){array_push($property_features, 'wet land');}
+            
+
+            
+                if($request->input('government_approved') == 1){array_push($property_features, 'goverment approved');}
+            
+
+            
+                if($request->input('with_c_of_o') == 1){array_push($property_features, 'with c of o');}
+            
+
+            
+                if($request->input('gate_house') == 1){array_push($property_features, 'gate house');}
+            
+	
             
             if($request->input('suya') == 1){
                 array_push($categories,'suya');
@@ -109,7 +245,7 @@ class PropertiesController extends Controller
                 array_push($categories,'plantain');
             }
     
-            $menu                   = new Menu();
+            $menu                   = new Property();
             $menu->menu_id               = $id;
             $menu->name             = $request->input('name');
             $menu->description            = $request->input('subtext');
