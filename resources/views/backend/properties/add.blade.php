@@ -9,6 +9,11 @@
                 <div class="page-titles">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item">Add Properties</li>
+						@if ($errors)
+							<span class="invalid-feedback">
+								<strong>{{ $errors }}</strong>
+							</span>
+						@endif
 					</ol>
                 </div>
                 <!-- row -->
@@ -22,11 +27,6 @@
 											<div class="compose-content">
 												<form action="{{ route('properties.add') }}" method="post" enctype="multipart/form-data">
 													@csrf
-													@if ($errors)
-														<span class="invalid-feedback">
-															<strong>{{ $errors }}</strong>
-														</span>
-													@endif
 													<div class="form-group span3 mb-3">
 														<input type="text" placeholder=" Name:" name="name">
 														<input type="text" placeholder="Address:" name="address">
@@ -52,24 +52,24 @@
 
 												<select name="beds" id="beds">
 													<option value="" disabled selected>Select Beds</option>
-													<option value="">1</option>
-													<option value="">2</option>
-													<option value="">3</option>
-													<option value="">4</option>
-													<option value="">5</option>
-													<option value="">6</option>
-													<option value="">7+</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7+">7+</option>
 												</select>
 
 												<select name="baths" id="bath">
 													<option value="" disabled selected>Select Bath</option>
-													<option value="">1</option>
-													<option value="">2</option>
-													<option value="">3</option>
-													<option value="">4</option>
-													<option value="">5</option>
-													<option value="">6</option>
-													<option value="">7+</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="6">5</option>
+													<option value="6">6</option>
+													<option value="7">7+</option>
 												</select>
 													</div>
 
