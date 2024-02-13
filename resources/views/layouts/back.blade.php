@@ -15,14 +15,14 @@
 	<meta name="format-detection" content="telephone=no">
     <title>Jalvin Homes Admin Dashboard</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="@admin_ass('admin/images/Jalvinheadlogo.png')">
-    <link href="@admin_ass('admin/vendor/jqvmap/css/jqvmap.min.css')" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="@admin_ass('images/Jalvinheadlogo.png')">
+    <link href="@admin_ass('vendor/jqvmap/css/jqvmap.min.css')" rel="stylesheet">
 	<!-- Vectormap -->
-    <link href="@admin_ass('admin/vendor/jqvmap/css/jqvmap.min.css')" rel="stylesheet">
-    <link href="@admin_ass('admin/vendor/bootstrap-select/dist/css/bootstrap-select.min.css')" rel="stylesheet">
-    <link href="@admin_ass('admin/css/style.css')" rel="stylesheet">
+    <link href="@admin_ass('vendor/jqvmap/css/jqvmap.min.css')" rel="stylesheet">
+    <link href="@admin_ass('vendor/bootstrap-select/dist/css/bootstrap-select.min.css')" rel="stylesheet">
+    <link href="@admin_ass('css/style.css')" rel="stylesheet">
 	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
-	<link href="@admin_ass('admin/vendor/owl-carousel/owl.carousel.css')" rel="stylesheet">
+	<link href="@admin_ass('vendor/owl-carousel/owl.carousel.css')" rel="stylesheet">
     <link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     	<link href="vendor/dropzone/dist/dropzone.css" rel="stylesheet">
 </head>
@@ -52,7 +52,7 @@
         ***********************************-->
         <div class="nav-header">
             <a href="{{route('view.dashboard') }}" class="brand-logo">
-                <img class="logo-abbr" src="@admin_ass('admin/images/Jalvinheadlogo.png')" alt="">
+                <img class="logo-abbr" src="@admin_ass('images/Jalvinheadlogo.png')" alt="">
             </a>
 
             <div class="nav-control">
@@ -98,7 +98,7 @@
 										<span class="text-black">Jalvin Barap</span>
 										<p class="fs-12 mb-0">Admin</p>
 									</div>
-                                    <img src="@admin_ass('admin/images/profile/17.jpg')" width="20" alt=""/>
+                                    <img src="@admin_ass('images/profile/17.jpg')" width="20" alt=""/>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <a href="app-profile.html" class="dropdown-item ai-icon">
@@ -196,26 +196,26 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
-    <script src="@admin_ass('admin/vendor/global/global.min.js')"></script>
-	<script src="@admin_ass('admin/vendor/bootstrap-select/dist/js/bootstrap-select.min.js')"></script>
-	<script src="@admin_ass('admin/vendor/chart.js/Chart.bundle.min.js')"></script>
-    <script src="@admin_ass('admin/js/custom.min.js')"></script>
-	<script src="@admin_ass('admin/js/deznav-init.js')"></script>
-	<script src="@admin_ass('admin/vendor/owl-carousel/owl.carousel.js')"></script>
+    <script src="@admin_ass('vendor/global/global.min.js')"></script>
+	<script src="@admin_ass('vendor/bootstrap-select/dist/js/bootstrap-select.min.js')"></script>
+	<script src="@admin_ass('vendor/chart.js/Chart.bundle.min.js')"></script>
+    <script src="@admin_ass('js/custom.min.js')"></script>
+	<script src="@admin_ass('js/deznav-init.js')"></script>
+	<script src="@admin_ass('vendor/owl-carousel/owl.carousel.js')"></script>
 		
 	<!-- Vectormap -->
-    <script src="@admin_ass('admin/vendor/jqvmap/js/jquery.vmap.min.js')"></script>
-    <script src="@admin_ass('admin/vendor/jqvmap/js/jquery.vmap.world.js')"></script>
+    <script src="@admin_ass('vendor/jqvmap/js/jquery.vmap.min.js')"></script>
+    <script src="@admin_ass('vendor/jqvmap/js/jquery.vmap.world.js')"></script>
 	
 	<!-- Chart piety plugin files -->
-    <script src="@admin_ass('admin/vendor/peity/jquery.peity.min.js')"></script>
+    <script src="@admin_ass('vendor/peity/jquery.peity.min.js')"></script>
 	
 	<!-- Apex Chart -->
-	<script src="@admin_ass('admin/vendor/apexchart/apexchart.js')"></script>
+	<script src="@admin_ass('vendor/apexchart/apexchart.js')"></script>
 	
 	<!-- Dashboard 1 -->
-	<script src="@admin_ass('admin/js/dashboard/dashboard-1.js')"></script>
-	<script src="@admin_ass('admin/vendor/dropzone/dist/dropzone.js')"></script>
+	<script src="@admin_ass('js/dashboard/dashboard-1.js')"></script>
+	<script src="@admin_ass('vendor/dropzone/dist/dropzone.js')"></script>
 	<script>
 		function carouselReview(){
 			/*  testimonial one function by = owl.carousel.js */
