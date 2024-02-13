@@ -16,7 +16,7 @@ class PropertiesController extends Controller
             $validator = Validator::make($request->all(), [
                 'name'             => 'required',
                 'address'             => 'required',
-                'price'           => 'required|between:0,99.99',
+                'price'           => 'required',
                 'city'           => 'required',
                 'country'           => 'required',
                 'beds'           => 'required',
