@@ -3,6 +3,7 @@
 namespace App\Providers;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -22,5 +23,6 @@ class AppServiceProvider extends ServiceProvider
         Blade::directive('admin_ass', function ($asset) {
             return "<?php echo 'https://jalvinhomes.com/public/backend/'.$asset; ?>";
         });
+        Schema::defaultStringLength(191);
     }
 }
