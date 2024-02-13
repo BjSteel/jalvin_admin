@@ -260,7 +260,22 @@
 			}, 1000); 
 		});
 	</script>
-	
+	<script>
+    // Get all checkboxes with the class "my-checkbox"
+    const checkboxes = document.querySelectorAll('.my-checkbox');
+
+    // Add a click event listener to each checkbox
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('click', function() {
+            // Toggle the value between 0 and 1
+            if (this.value === '0') {
+                this.value = '1';
+            } else {
+                this.value = '0';
+            }
+        });
+    });
+</script>
 </body>
 
 
