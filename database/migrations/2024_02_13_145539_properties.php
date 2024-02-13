@@ -14,8 +14,8 @@ return new class extends Migration
             $table->float('price');
             $table->string('city');
             $table->string('country');
-            $table->int('beds');
-            $table->int('baths');
+            $table->integer('beds');
+            $table->integer('baths');
             $table->string('year');
             $table->string('size');
             $table->string('status');
