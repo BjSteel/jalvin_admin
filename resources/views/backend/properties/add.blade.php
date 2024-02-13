@@ -8,9 +8,9 @@
             <div class="container-fluid">
                 <div class="page-titles">
 					<ol class="breadcrumb">
-						<li class="breadcrumb-item">Add Properties</li>
+						<li class="breadcrumb-item">Add Properties</li><br>
 						@if ($errors)
-							<span class="invalid-feedback">
+							<span style="color:red;font-size:14px">
 								<strong>{{ $errors }}</strong>
 							</span>
 						@endif
@@ -322,11 +322,11 @@
 
 												
 												<h5 class="mb-4"><i class="fa fa-paperclip"></i> Add Property Images</h5>
-												<div action="#" class="dropzone">
+												<!-- <div action="#" class="dropzone"> -->
 													<div class="fallback">
 														<input name="images" type="file" multiple />
 													</div>
-												</div>
+												<!-- </div> -->
 											</div>
 											<div class="text-start mt-4 mb-3">
 												<button class="btn btn-primary btn-sl-sm me-2" type="submit"><span class="me-2"><i class="fa fa-paper-plane"></i></span>Upload Property</button>
