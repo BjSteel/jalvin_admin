@@ -28,13 +28,9 @@ class PropertiesController extends Controller
             ]);
     
             if ($validator->fails()) {
-                if ($request->ajax()) {
-                    return response()->json(['result' => 'error', 'message' => $validator->errors()->all()]);
-                } else {
-                    return redirect()->route('properties.add')
+                return redirect()->route('properties.add')
                         ->withErrors($validator)
                         ->withInput();
-                }
             }
             $id = generateUniqueId();
 

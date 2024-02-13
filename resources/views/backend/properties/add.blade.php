@@ -22,6 +22,11 @@
 											<div class="compose-content">
 												<form action="{{ route('properties.add') }}" method="post" enctype="multipart/form-data">
 													@csrf
+													@if ($errors)
+														<span class="invalid-feedback">
+															<strong>{{ $errors }}</strong>
+														</span>
+													@endif
 													<div class="form-group span3 mb-3">
 														<input type="text" placeholder=" Name:" name="name">
 														<input type="text" placeholder="Address:" name="address">

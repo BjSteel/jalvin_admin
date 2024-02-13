@@ -276,6 +276,55 @@
         });
     });
 </script>
+
+<script type="text/javascript">
+		(function($) {
+
+    		"use strict";
+
+			//Show Success Message
+			@if(Session::has('success'))
+		       $("#main_alert > span.msg").html(" {{ session('success') }} ");
+			   $("#main_alert").addClass("alert-success").removeClass("alert-danger");
+			   $("#main_alert").css('display','block');
+			@endif
+
+			//Show Single Error Message
+			@if(Session::has('error'))
+			   $("#main_alert > span.msg").html(" {{ session('error') }} ");
+			   $("#main_alert").addClass("alert-danger").removeClass("alert-success");
+			   $("#main_alert").css('display','block');
+			@endif
+
+			@php $i =0; @endphp
+
+			@foreach ($errors->all() as $error)
+			    @if ($loop->first)
+					$("#main_alert > span.msg").html("<i class='typcn typcn-delete'></i> {{ $error }} ");
+					$("#main_alert").addClass("alert-danger").removeClass("alert-success");
+				@else
+                    $("#main_alert > span.msg").append("<br><i class='typcn typcn-delete'></i> {{ $error }} ");
+				@endif
+
+				@if ($loop->last)
+					$("#main_alert").css('display','block');
+				@endif
+
+				@if(isset($errors->keys()[$i]))
+					var name = "{{ $errors->keys()[$i] }}";
+
+					$("input[name='" + name + "']").addClass('error is-invalid');
+					$("select[name='" + name + "'] + span").addClass('error is-invalid');
+
+					$("input[name='"+name+"'], select[name='"+name+"']").parent().append("<span class='v-error'>{{$error}}</span>");
+				@endif
+				@php $i++; @endphp
+
+			@endforeach
+
+        })(jQuery);
+
+	 </script>
 </body>
 
 
