@@ -20,7 +20,7 @@
 									<div class="col-lg-12">
 										<div class="">
 											<div class="compose-content">
-												<form action="{{ route('properties.add') }}" method="post">
+												<form action="{{ route('properties.add') }}" method="post" enctype="multipart/form-data">
 													@csrf
 													<div class="form-group span3 mb-3">
 														<input type="text" placeholder=" Name:" name="name">
@@ -315,18 +315,18 @@
 
 													
 
-												</form>
+												
 												<h5 class="mb-4"><i class="fa fa-paperclip"></i> Add Property Images</h5>
-												<form action="#" class="dropzone">
+												
 													<div class="fallback">
 														<input name="images" type="file" multiple />
 													</div>
-												</form>
+												
 											</div>
 											<div class="text-start mt-4 mb-3">
 												<button class="btn btn-primary btn-sl-sm me-2" type="submit"><span class="me-2"><i class="fa fa-paper-plane"></i></span>Upload Property</button>
 												<button class="btn btn-danger light btn-sl-sm" type="button"><span class="me-2"><i class="fa fa-times"></i></span>Discard</button>
-											</div>
+											</div></form>
 										</div>
 									</div>
 								</div>
