@@ -56,7 +56,7 @@
 													<option value="">7+</option>
 												</select>
 
-												<select name="bath" id="bath">
+												<select name="baths" id="bath">
 													<option value="" disabled selected>Select Bath</option>
 													<option value="">1</option>
 													<option value="">2</option>
@@ -69,8 +69,8 @@
 													</div>
 
 													<div class="form-group span2 mb-3">
-														<input type="number" placeholder="Year Built" name="build_year">
-														<input type="text" placeholder="Property Size" name="property_size">
+														<input type="number" placeholder="Year Built" name="year">
+														<input type="text" placeholder="Property Size" name="size">
 													</div>
 
 													<div class="feats">
