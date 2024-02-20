@@ -244,7 +244,7 @@ class PropertiesController extends Controller
 
     public function view(Request $request, $id){
         $property = Property::find($id);
-        return view('backend.properties.view')->with('property');
+        return view('backend.properties.view',compact('property'));
     }
 
     public function update(Request $request, $id){

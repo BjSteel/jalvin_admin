@@ -20,7 +20,7 @@
 								<div class="card bg-primary text-center">
 									<div class="card-body">
 										<h2 class="fs-30 text-white">Price</h2>
-										<span class="text-white font-w300"><strong> <strike>N</strike>420,000,000</strong></span>
+										<span class="text-white font-w300"><strong> <strike>N</strike>{{ $property->price }}</strong></span>
 									</div>
 								</div>
 							</div>
@@ -38,7 +38,7 @@
 											<li>Year Built: 2023</li>
 											<li>Property Status: Ready To Move In</li>
 											<li>Property-Type: Fully Detacthed Duplex</li>
-											<li>Property Size: 11,000 ft</li>
+											<li>Property Size: {{ $property->size }}</li>
 										</ul>
 									</div>
 								</div>
@@ -65,11 +65,11 @@
 									</div>
 									<div class="card-body">
 										<ul>
-											<li>Address: Osapa London LEKKI</li>
+											<li>Address: {{ $property->address }}</li>
 											<li>Area: Lekki</li>
-											<li>City: Lagos Island</li>
-											<li>State: Lagos</li>
-											<li>Country: Nigeria</li>
+											<li>City: {{ $property->city }}</li>
+											<li>State: {{ $property->state }}</li>
+											<li>Country: {{ $property->country }}</li>
 										</ul>
 									</div>
 								</div>
