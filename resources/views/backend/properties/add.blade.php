@@ -9,7 +9,7 @@
                 <div class="page-titles">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item">Add Properties</li><br>
-						@if ($errors)
+						@if (isset($errors))
 							<span style="color:red;font-size:14px">
 								<strong>{{ $errors }}</strong>
 							</span>
@@ -37,8 +37,8 @@
 													<option value="" disabled selected>Select City</option>
 													<option value="null">---</option>
 													<option value="abuja">Abuja</option>
-													<option value="lagos_island">Lagos Island</option>
-													<option value="lagos_mainland">Lagos Mainland</option>
+													<option value="lagos island">Lagos Island</option>
+													<option value="lagos mainland">Lagos Mainland</option>
 													<option value="ibadan">Ibadan</option>
 													<option value="dubai">Dubai</option>
 												</select>

@@ -39,7 +39,7 @@ class PropertiesController extends Controller
             foreach($request->file('images') as $file){
                 $name=date('mdYHis').$file->getClientOriginalName();
                 Storage::disk('ftp')->put('properties/images/'.$id.'/'.$name, fopen($file, 'r+'));
-                $images[]=$name;
+                array_push($images, $name);
             }
 
             $status = array();
@@ -233,7 +233,7 @@ class PropertiesController extends Controller
             $property->images   = json_encode($images);
             $property->save();
     
-            return redirect()->route('menu.list')->with('success', 'Property added successfully');
+            return redirect()->route('properties.add')->with('success', 'Property added successfully');
         }
     }
 }

@@ -147,12 +147,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a class="has-arrow ai-icon" href="all-properties.html" aria-expanded="false">
+                    <li><a class="has-arrow ai-icon" href="{{route('properties.view') }}" aria-expanded="false">
 							<i class="flaticon-table"></i>
 							<span class="nav-text">View All Properties</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="all-properties.html">View All Properties</a></li>
+                            <li><a href="{{route('properties.view') }}">View All Properties</a></li>
                         </ul>
                     </li>
                 </ul>

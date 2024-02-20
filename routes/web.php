@@ -20,4 +20,5 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/logout', 'AuthController@logout')->name('auth.logout');
     //Properties Controller
     Route::match(['get','post'], '/add-property', 'PropertiesController@add')->name('properties.add');
+    Route::get('/view-property', 'PropertiesController@view')->name('properties.view');
 });
