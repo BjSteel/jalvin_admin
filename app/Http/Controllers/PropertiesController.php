@@ -236,4 +236,8 @@ class PropertiesController extends Controller
             return redirect()->route('properties.add')->with('success', 'Property added successfully');
         }
     }
+
+    public function view(){
+        return view('backend.properties.view');
+    }
 }
