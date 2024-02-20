@@ -1,1826 +1,261 @@
 @extends('layouts.back')
 @section('content')
+
         <div class="content-body">
-            <div class="container-fluid">
-                <div class="page-titles">
-					<ol class="breadcrumb">
-						<li class="breadcrumb-item">All Properties Listing</li>
-					</ol>
-                </div>
-                <!-- row -->
-
-
-                <div class="row">
-					<div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table id="example5" class="display min-w850">
-                                        <thead>
-                                            <tr>
-                                                <th>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="checkAll" required="">
-														<label class="custom-control-label" for="checkAll"></label>
-													</div>
-												</th>
-                                                <th>Property Id</th>
-                                                <th>Property Type</th>
-                                                <th>Date</th>
-                                                <th>Property Name</th>
-                                                <th>Price</th>
-                                                <th>Beds</th>
-                                                <th>Property Size</th>
-                                                <th>Status</th>
-                                                <th>Property Address</th>
-                                                <th>Property City</th>
-                                                <th>Property Area</th>
-                                                <th>Property State</th>
-                                                <th>Property Country</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="property-details.html">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-02362</td>
-                                                <td>Semi Detached</td>
-                                                <td>01/12/2023</td>
-                                                <td>6 Bedroom Semi Detached Duplex</td>
-                                                <td>N280,000,00</td>
-                                                <td>6+</td>
-                                                <td>17,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-
-                                                    <span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														New Listing
-													</span>
-
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Chevron Ikate</td>
-                                                <td>Lagos Island</td>
-                                                <td>Chevron</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-88541</td>
-                                                <td>Commercial Land</td>
-                                                <td>26/02/2025</td>
-                                                <td>Zylus Home Dry Land</td>
-                                                <td>N6,000,000</td>
-                                                <td>---</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>GRA</td>
-                                                <td>Lagos Island</td>
-                                                <td>Ikeja</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-03001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>4 Bedroom Terrace Duplex</td>
-                                                <td>N60,000,000</td>
-                                                <td>4+</td>
-                                                <td>7,500 sqm</td>
-												<td>
-													<span class="badge light badge-danger mb-2">
-														<i class="fas fa-circle text-danger me-1"></i>
-														Sold Out
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Mainland</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-25551</td>
-                                                <td>Bungalow</td>
-                                                <td>26/02/2023</td>
-                                                <td>4 Bedroom Fully Detached Duplex</td>
-                                                <td>N90,000,000</td>
-                                                <td>4+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>White House</td>
-                                                <td>Abuja</td>
-                                                <td>Aso Rock</td>
-                                                <td>Abuja State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                             <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                             <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                             <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                             <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                             <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                             <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-                                            <tr>
-                                                <td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox2" required="">
-														<label class="custom-control-label" for="customCheckBox2"></label>
-													</div>
-												</td>
-                                                <td>#P-00001</td>
-                                                <td>Residential</td>
-                                                <td>26/02/2023</td>
-                                                <td>5 Bedroom Fully Detached Duplex</td>
-                                                <td>N600,000,000</td>
-                                                <td>5+</td>
-                                                <td>11,000 sqm</td>
-												<td>
-													<span class="badge light badge-warning mb-2">
-														<i class="fas fa-circle text-warning me-1"></i>
-														For sale
-													</span>
-                                                    <span class="badge light badge-success mb-2">
-														<i class="fas fa-circle text-success me-1"></i>
-														Ready For Sale
-													</span>
-                                                    <span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Featured
-													</span>
-												</td>
-                                                <td>Osapa London LEKKI</td>
-                                                <td>Lagos Island</td>
-                                                <td>Lekki</td>
-                                                <td>Lagos State</td>
-                                                <td>Nigeria</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
-															<a class="dropdown-item" href="#">View Property</a>
-														</div>
-													</div>
-												</td>												
-                                            </tr>
-
-                                            <!-- <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox3" required="">
-														<label class="custom-control-label" for="customCheckBox3"></label>
-													</div>
-												</td>
-                                                <td>#P-00002</td>
-                                                <td>28/02/2020, 12:42 AM</td>
-												<td>Kelvin Fasan</td>
-                                                <td>Big Snow</td>
-												<td>Sleep Problem</td>
-                                                <td>
-													<span class="badge light badge-warning">
-														<i class="fas fa-circle text-warning me-1"></i>
-														In Treatment
-													</span>
-												</td>
-                                                <td>AB-002</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-
-
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox3" required="">
-														<label class="custom-control-label" for="customCheckBox3"></label>
-													</div>
-												</td>
-                                                <td>#P-00002</td>
-                                                <td>28/02/2020, 12:42 AM</td>
-												<td>Garrett Winters</td>
-                                                <td>Dr. Cedric</td>
-												<td>Sleep Problem</td>
-                                                <td>
-													<span class="badge light badge-warning">
-														<i class="fas fa-circle text-warning me-1"></i>
-														In Treatment
-													</span>
-												</td>
-                                                <td>AB-002</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox4" required="">
-														<label class="custom-control-label" for="customCheckBox4"></label>
-													</div>
-												</td>
-                                                <td>#P-00003</td>
-                                                <td>26/02/2020, 12:42 AM</td>
-												<td>Ashton Cox</td>
-                                                <td>Dr. Rhona</td>
-												<td>Cold & Flu</td>
-                                                <td>
-													<span class="badge light badge-success">
-														<i class="fas fa-circle text-success me-1"></i>
-														Recovered
-													</span>
-												</td>
-                                                <td>AB-003</td>
-												<td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox5" required="">
-														<label class="custom-control-label" for="customCheckBox5"></label>
-													</div>
-												</td>
-                                                <td>#P-00004</td>
-                                                <td>29/02/2020, 12:42 AM</td>
-												<td>Ashton Cox</td>
-                                                <td>Dr. Cedric</td>
-                                                <td>Cold & Flu</td>
-                                                <td>
-													<span class="badge light badge-warning">
-														<i class="fas fa-circle text-warning me-1"></i>
-														In Treatment
-													</span>
-												</td>
-                                                <td>AB-004</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox6" required="">
-														<label class="custom-control-label" for="customCheckBox6"></label>
-													</div>
-												</td>
-                                                <td>#P-00005</td>
-                                                <td>28/02/2020, 12:42 AM</td>
-												<td>Ashton Cox</td>
-                                                <td>Dr. Cedric</td>
-                                                <td>Cold & Flu</td>
-                                                <td>
-													<span class="badge light badge-warning">
-														<i class="fas fa-circle text-warning me-1"></i>
-														In Treatment
-													</span>
-												</td>
-                                                <td>AB-005</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox7" required="">
-														<label class="custom-control-label" for="customCheckBox7"></label>
-													</div>
-												</td>
-                                                <td>#P-00006</td>
-                                                <td>28/02/2020, 12:42 AM</td>
-												<td>Ashton Cox</td>
-                                                <td>Dr. Rhona</td>
-                                                <td>Sleep Problem</td>
-												<td>
-													<span class="badge light badge-warning">
-														<i class="fas fa-circle text-warning me-1"></i>
-														In Treatment
-													</span>
-												</td>
-                                                <td>AB-006</td>
-												<td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox8" required="">
-														<label class="custom-control-label" for="customCheckBox8"></label>
-													</div>
-												</td>
-                                                <td>#P-00007</td>
-                                                <td>26/02/2020, 12:42 AM</td>
-												<td>Airi Satou</td>
-                                                <td>Dr. Rhona</td>
-                                                <td>Cold & Flu</td>
-                                                <td>
-													<span class="badge light badge-danger">
-														<i class="fas fa-circle text-danger me-1"></i>
-														New Patient
-													</span>
-												</td>
-                                                <td>AB-007</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox9" required="">
-														<label class="custom-control-label" for="customCheckBox9"></label>
-													</div>
-												</td>
-                                                <td>#P-00008</td>
-                                                <td>29/02/2020, 12:42 AM</td>
-												<td>Airi Satou</td>
-                                                <td>Dr. Garrett </td>
-                                                <td>Sleep Problem</td>
-                                                <td>
-													<span class="badge light badge-warning">
-														<i class="fas fa-circle text-warning me-1"></i>
-														In Treatment
-													</span>
-												</td>
-                                                <td>AB-008</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox10" required="">
-														<label class="custom-control-label" for="customCheckBox10"></label>
-													</div>
-												</td>
-                                                <td>#P-00009</td>
-                                                <td>25/02/2020, 12:42 AM</td>
-												<td>Airi Satou</td>
-                                                <td>Dr. Rhona</td>
-                                                <td>Cold & Flu</td>
-                                                <td>
-													<span class="badge light badge-danger">
-														<i class="fas fa-circle text-danger me-1"></i>
-														New Patient
-													</span>
-												</td>
-                                                <td>AB-009</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox11" required="">
-														<label class="custom-control-label" for="customCheckBox11"></label>
-													</div>
-												</td>
-                                                <td>#P-00010</td>
-                                                <td>26/02/2020, 12:42 AM</td>
-												<td>Airi Satou</td>
-                                                <td>Dr. Rhona</td>
-                                                <td>Sleep Problem</td>
-                                                <td>
-													<span class="badge light badge-danger">
-														<i class="fas fa-circle text-danger me-1"></i>
-														New Patient
-													</span>
-												</td>
-                                                <td>AB-010</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox12" required="">
-														<label class="custom-control-label" for="customCheckBox12"></label>
-													</div>
-												</td>
-                                                <td>#P-00011</td>
-                                                <td>28/02/2020, 12:42 AM</td>
-												<td>Airi Satou</td>
-                                                <td>Dr. Rhona</td>
-                                                <td>Cold & Flu</td>
-												<td>
-													<span class="badge light badge-warning">
-														<i class="fas fa-circle text-warning me-1"></i>
-														In Treatment
-													</span>
-												</td>
-                                                <td>AB-011</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox13" required="">
-														<label class="custom-control-label" for="customCheckBox13"></label>
-													</div>
-												</td>
-                                                <td>#P-00012</td>
-                                                <td>29/02/2020, 12:42 AM</td>
-												<td>Sonya Frost</td>
-                                                <td>Dr. Garrett</td>
-                                                <td>Sleep Problem</td>
-                                                <td>
-													<span class="badge light badge-danger">
-														<i class="fas fa-circle text-danger me-1"></i>
-														New Patient
-													</span>
-												</td>
-                                                <td>AB-012</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox14" required="">
-														<label class="custom-control-label" for="customCheckBox14"></label>
-													</div>
-												</td>
-                                                <td>#P-00013</td>
-                                                <td>25/02/2020, 12:42 AM</td>
-												<td>Sonya Frost</td>
-                                                <td>Dr. Rhona</td>
-                                                <td>Cold & Flu</td>
-												<td>
-													<span class="badge light badge-danger">
-														<i class="fas fa-circle text-danger me-1"></i>
-														New Patient
-													</span>
-												</td>
-                                                <td>AB-013</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox15" required="">
-														<label class="custom-control-label" for="customCheckBox15"></label>
-													</div>
-												</td>
-                                                <td>#P-00014</td>
-                                                <td>26/02/2020, 12:42 AM</td>
-												<td>Sonya Frost</td>
-                                                <td>Dr. Garrett</td>
-                                                <td>Sleep Problem</td>
-                                                <td>
-													<span class="badge light badge-warning">
-														<i class="fas fa-circle text-warning me-1"></i>
-														In Treatment
-													</span>
-												</td>
-                                                <td>AB-014</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox16" required="">
-														<label class="custom-control-label" for="customCheckBox16"></label>
-													</div>
-												</td>
-                                                <td>#P-00015</td>
-                                                <td>28/02/2020, 12:42 AM</td>
-												<td>Sonya Frost</td>
-												<td>Dr. Rhona</td>
-                                                <td>Cold & Flu</td>
-                                                <td>
-													<span class="badge light badge-danger">
-														<i class="fas fa-circle text-danger me-1"></i>
-														New Patient
-													</span>
-												</td>
-                                                <td>AB-015</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox17" required="">
-														<label class="custom-control-label" for="customCheckBox17"></label>
-													</div>
-												</td>
-                                                <td>#P-00016</td>
-                                                <td>29/02/2020, 12:42 AM</td>
-												<td>Sonya Frost</td>
-                                                <td>Dr. Garrett</td>
-												<td>Sleep Problem</td>
-												<td>
-													<span class="badge light badge-danger">
-														<i class="fas fa-circle text-danger me-1"></i>
-														New Patient
-													</span>
-												</td>
-                                                <td>AB-016</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox18" required="">
-														<label class="custom-control-label" for="customCheckBox18"></label>
-													</div>
-												</td>
-                                                <td>#P-00017</td>
-                                                <td>25/02/2020, 12:42 AM</td>
-												<td>Sonya Frost</td>
-                                                <td>Dr. Rhona</td>
-												<td>Cold & Flu</td>
-                                                <td>
-													<span class="badge light badge-warning">
-														<i class="fas fa-circle text-warning me-1"></i>
-														In Treatment
-													</span>
-												</td>
-                                                <td>AB-017</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox19" required="">
-														<label class="custom-control-label" for="customCheckBox19"></label>
-													</div>
-												</td>
-                                                <td>#P-00018</td>
-                                                <td>26/02/2020, 12:42 AM</td>
-												<td>Sonya Frost</td>
-                                                <td>Dr. Rhona</td>
-                                                <td>Sleep Problem</td>
-                                                <td>
-													<span class="badge light badge-danger">
-														<i class="fas fa-circle text-danger me-1"></i>
-														New Patient
-													</span>
-												</td>
-                                                <td>AB-018</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox20" required="">
-														<label class="custom-control-label" for="customCheckBox20"></label>
-													</div>
-												</td>
-                                                <td>#P-00019</td>
-                                                <td>28/02/2020, 12:42 AM</td>
-												<td>Sonya Frost</td>
-                                                <td>Dr. Rhona</td>
-                                                <td>Cold & Flu</td>
-                                                <td>
-													<span class="badge light badge-danger">
-														<i class="fas fa-circle text-danger me-1"></i>
-														New Patient
-													</span>
-												</td>
-                                                <td>AB-019</td>
-												<td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr>
-                                            <tr>
-												<td>
-													<div class="form-check custom-checkbox">
-														<input type="checkbox" class="form-check-input" id="customCheckBox21" required="">
-														<label class="custom-control-label" for="customCheckBox21"></label>
-													</div>
-												</td>
-                                                <td>#P-00020</td>
-                                                <td>25/02/2020, 12:42 AM</td>
-												<td>Sonya Frost</td>
-                                                <td>Dr. Garrett</td>
-                                                <td>Sleep Problem</td>
-                                                <td>
-													<span class="badge light badge-warning">
-														<i class="fas fa-circle text-warning me-1"></i>
-														In Treatment
-													</span>
-												</td>
-                                                <td>AB-020</td>
-                                                <td>
-													<div class="dropdown ms-auto text-end">
-														<div class="btn-link" data-bs-toggle="dropdown">
-															<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect x="0" y="0" width="24" height="24"></rect><circle fill="#000000" cx="5" cy="12" r="2"></circle><circle fill="#000000" cx="12" cy="12" r="2"></circle><circle fill="#000000" cx="19" cy="12" r="2"></circle></g></svg>
-														</div>
-														<div class="dropdown-menu dropdown-menu-end">
-															<a class="dropdown-item" href="#">Accept Patient</a>
-															<a class="dropdown-item" href="#">Reject Order</a>
-															<a class="dropdown-item" href="#">View Details</a>
-														</div>
-													</div>
-												</td>
-                                            </tr> -->
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <!-- row -->
+			<div class="container-fluid">
+                <div class="form-head page-titles d-flex  align-items-center">
+					<div class="me-auto  d-lg-block">
+						<h2 class="text-black font-w600">{{ $name }}</h2>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item active"><a href="javascript:void(0)">Property Details</a></li>
+						</ol>
+					</div>
+					<button href="javascript:void(0);" class="btn btn-danger rounded me-3">Update Info</button>
 				</div>
+				<div class="row">
+					<div class="col-xl-3 col-xxl-4">
+						<div class="row">
+							<div class="col-xl-12">
+								<div class="card bg-primary text-center">
+									<div class="card-body">
+										<h2 class="fs-30 text-white">Price</h2>
+										<span class="text-white font-w300"><strong> <strike>N</strike>420,000,000</strong></span>
+									</div>
+								</div>
+							</div>
+
+
+							
+
+							<div class="col-xl-12">
+								<div class="card property-features">
+									<div class="card-header border-0 pb-0">	
+										<h3 class="fs-20 text-black mb-0">Property Details</h3>
+									</div>
+									<div class="card-body">
+										<ul>
+											<li>Year Built: 2023</li>
+											<li>Property Status: Ready To Move In</li>
+											<li>Property-Type: Fully Detacthed Duplex</li>
+											<li>Property Size: 11,000 ft</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="col-xl-12">
+								<div class="card property-features">
+									<div class="card-header border-0 pb-0">	
+										<h3 class="fs-20 text-black mb-0">Property Type</h3>
+									</div>
+									<div class="card-body">
+										<ul>
+											<li> Residential</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xl-12">
+								<div class="card property-features">
+									<div class="card-header border-0 pb-0">	
+										<h3 class="fs-20 text-black mb-0">Location</h3>
+									</div>
+									<div class="card-body">
+										<ul>
+											<li>Address: Osapa London LEKKI</li>
+											<li>Area: Lekki</li>
+											<li>City: Lagos Island</li>
+											<li>State: Lagos</li>
+											<li>Country: Nigeria</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-9 col-xxl-8">
+						<div class="row">
+							<div class="col-xl-12">
+								<div class="card">
+									<div class="card-body">
+										<div class="front-view-slider mb-sm-5 mb-3 owl-carousel">
+											<div class="items">
+												<div class="front-view">
+													<img src="images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1.jpg" style="filter: brightness(50%);" alt="">
+													<div class="info">
+														<h3 class="fs-30 mb-2 text-white font-w600">Front View</h3>
+														</div>
+												</div>
+											</div>
+											
+											<div class="items">
+												<div class="front-view">
+													<img src="images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1 cinema.jpg" style="filter: brightness(50%);" alt="">
+													
+												</div>
+											</div>
+
+											<div class="items">
+												<div class="front-view">
+													<img src="images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1 closet 2.jpg" style="filter: brightness(50%);" alt="">
+													
+												</div>
+											</div>
+
+											<div class="items">
+												<div class="front-view">
+													<img src="images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1 kitchen.jpg" style="filter: brightness(50%);" alt="">
+													
+												</div>
+											</div>
+
+											<div class="items">
+												<div class="front-view">
+													<img src="images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1 lounge.jpg" style="filter: brightness(50%);" alt="">
+													
+												</div>
+											</div>
+
+											<div class="items">
+												<div class="front-view">
+													<img src="images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1 sitting room.jpg" style="filter: brightness(50%);" alt="">
+													
+												</div>
+											</div>
+
+											<div class="items">
+												<div class="front-view">
+													<img src="images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1 swimming .jpg" style="filter: brightness(50%);" alt="">
+													
+												</div>
+											</div>
+											
+
+											
+											<div class="items">
+												<div class="front-view">
+													<img src="images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1 bath.jpg" style="filter: brightness(50%);" alt="">
+												</div>
+											</div>
+										</div>
+										<div>
+											<a href="javascript:void(0);" class="btn btn-primary rounded mb-4">ID : #P-00001</a>
+											<div class="d-md-flex d-block mb-sm-5 mb-3">
+												<div class="me-auto mb-md-0 mb-4">
+													<h2 class="font-w600 text-black">5 Bedroom Fully Detached Duplex</h2>
+													<span class="fs-18">
+														<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path fill-rule="evenodd" clip-rule="evenodd" d="M10.9475 4.78947C8.94136 4.78947 7.02346 5.55047 5.61418 6.89569C4.20599 8.23987 3.42116 10.056 3.42116 11.9426C3.42116 14.7033 5.29958 17.3631 7.32784 19.4068C8.3259 20.4124 9.32653 21.2351 10.0786 21.8068C10.434 22.077 10.7326 22.29 10.9475 22.4389C11.1623 22.29 11.4609 22.077 11.8163 21.8068C12.5684 21.2351 13.569 20.4124 14.5671 19.4068C16.5954 17.3631 18.4738 14.7033 18.4738 11.9426C18.4738 10.056 17.689 8.23987 16.2808 6.89569C14.8715 5.55047 12.9536 4.78947 10.9475 4.78947ZM10.9475 23.2632C10.5801 23.8404 10.58 23.8403 10.5797 23.8401L10.5792 23.8398L10.5774 23.8387L10.5718 23.835L10.5517 23.8221C10.5345 23.8109 10.5097 23.7948 10.4779 23.7737C10.4143 23.7317 10.3224 23.6701 10.2063 23.5901C9.97419 23.43 9.64481 23.1959 9.25054 22.8962C8.46315 22.2977 7.41114 21.4333 6.35658 20.3707C4.27957 18.278 2.05273 15.2776 2.05273 11.9426C2.05273 9.67199 2.99797 7.50121 4.66932 5.90583C6.33959 4.31148 8.59845 3.42105 10.9475 3.42105C13.2965 3.42105 15.5554 4.31148 17.2256 5.90583C18.897 7.50121 19.8422 9.67199 19.8422 11.9426C19.8422 15.2776 17.6154 18.278 15.5384 20.3707C14.4838 21.4333 13.4318 22.2977 12.6444 22.8962C12.2501 23.1959 11.9207 23.43 11.6886 23.5901C11.5725 23.6701 11.4806 23.7317 11.417 23.7737C11.3979 23.7864 11.3814 23.7972 11.3675 23.8063C11.3582 23.8124 11.3501 23.8176 11.3432 23.8221L11.3232 23.835L11.3175 23.8387L11.3158 23.8398L11.3152 23.8401C11.315 23.8403 11.3148 23.8404 10.9475 23.2632ZM10.9475 23.2632L11.3148 23.8404C11.0907 23.983 10.8043 23.983 10.5801 23.8404L10.9475 23.2632Z" fill="#666666"/>
+															<path fill-rule="evenodd" clip-rule="evenodd" d="M10.9474 10.2632C9.81378 10.2632 8.89479 11.1822 8.89479 12.3158C8.89479 13.4494 9.81378 14.3684 10.9474 14.3684C12.0811 14.3684 13.0001 13.4494 13.0001 12.3158C13.0001 11.1822 12.0811 10.2632 10.9474 10.2632ZM7.52637 12.3158C7.52637 10.4264 9.05802 8.89474 10.9474 8.89474C12.8368 8.89474 14.3685 10.4264 14.3685 12.3158C14.3685 14.2052 12.8368 15.7368 10.9474 15.7368C9.05802 15.7368 7.52637 14.2052 7.52637 12.3158Z" fill="#666666"/>
+														</svg>
+														Osapa London LEKKI</span>
+												</div>
+												<div class="ms-md-4 text-md-right">
+													<p class="fs-14 text-black mb-1 me-1">Price</p>
+													<h4 class="fs-24 text-primary"> N600,000,000</h4>
+												</div>
+											</div>
+											<div class="mb-sm-5 mb-2">
+												<a href="javascript:void(0);" class="btn btn-primary light rounded me-2 mb-sm-0 mb-2">
+													<svg class="me-2" width="28" height="19" viewBox="0 0 28 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M23.1 8.03846C25.7498 8.03846 28 10.2859 28 13.1538V17.5385H25.9V19H24.5V17.5385H3.5V19H2.1V17.5385H0V13.1538C0 10.3876 2.17398 8.03846 4.9 8.03846H23.1ZM21.7 0C23.5821 0 25.2005 1.57962 25.2 3.65385L25.2005 7.14522C24.5639 6.78083 23.8517 6.57692 23.1 6.57692L21.7 6.57618C21.7 5.32466 20.7184 4.38462 19.6 4.38462H15.4C14.8622 4.38462 14.3716 4.59567 14.0001 4.94278C13.629 4.59593 13.1381 4.38462 12.6 4.38462H8.4C7.24044 4.38462 6.30038 5.36575 6.3 6.57619L4.9 6.57692C4.14851 6.57692 3.43653 6.7807 2.8 7.14488V3.65385C2.8 1.68899 4.3096 0 6.3 0H21.7ZM12.6 5.84579C12.9799 5.84579 13.3 6.21117 13.3 6.57692L7.7 6.57618C7.7 6.12909 8.04101 5.84615 8.4 5.84615L12.6 5.84579ZM19.6 5.85107C19.9961 5.84578 20.2996 6.20175 20.3 6.57618H14.7C14.7 6.1227 15.041 5.84615 15.4 5.84615L19.6 5.85107Z" fill="#3B4CB8"/>
+													</svg>
+													5 Bedroom
+												</a>
+												<a href="javascript:void(0);" class="btn btn-primary light rounded me-2 mb-sm-0 mb-2">
+													<svg class="me-2" width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M19 10.4211L18.6388 12.249C18.0616 15.1706 15.4406 17.3684 12.5829 17.3684H11.6923L13.4082 22H2.28779V10.4211H19ZM5.14753 0C6.68536 0 8.00727 1.29706 8.00727 2.89474V7.52632H18.8743V8.68421H8.00727V9.26316H1.1439L1.14378 11.0001C0.481336 10.4964 0 9.64309 0 8.68421V2.89474C0 1.33809 1.25234 0 2.85974 0H5.14753Z" fill="#3B4CB8"/>
+													</svg>
+													2 Bathroom
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							
+							<div class="col-xl-12">
+								<div class="card property-features">
+									<div class="card-header border-0 pb-0">	
+										<h3 class="fs-20 text-black mb-0">Property Features</h3>
+									</div>
+									<div class="card-body">
+										<ul>
+											<li><i class="las la-check-circle" style="color: #FF6600;"></i>Gym</li>
+											<li><i class="las la-check-circle" style="color: #FF6600;"></i>24 Hour Security</li>
+											<li><i class="las la-check-circle" style="color: #FF6600;"></i>Cinema</li>
+											<li><i class="las la-check-circle" style="color: #FF6600;"></i>Detailed Finishing</li>
+											<li><i class="las la-check-circle" style="color: #FF6600;"></i>Wardrobes</li>
+											<li><i class="las la-check-circle" style="color: #FF6600;"></i>Jacuzzi</li>
+											<li><i class="las la-check-circle" style="color: #FF6600;"></i>CCTV</li>
+											<li><i class="las la-check-circle" style="color: #FF6600;"></i>Automated Light</li>
+											<li><i class="las la-check-circle" style="color: #FF6600;"></i>Water Heater</li>
+											<li><i class="las la-check-circle" style="color: #FF6600;"></i>Heat Extractor</li>
+											<li><i class="las la-check-circle" style="color: #FF6600;"></i>Ample Parking Space</li>
+											<li><i class="las la-check-circle" style="color: #FF6600;"></i>Swimming Pool</li>
+											<li><i class="las la-check-circle" style="color: #FF6600;"></i>Modern Day POP Ceiling</li>
+											<li><i class="las la-check-circle" style="color: #FF6600;"></i>Fitted Kitchen With Accessories</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+
+							
+
+
+						</div>
+					</div>
+				</div>
+
+
+				<!-- <div class="col-lg-12">
+					<div class="card">
+						<div class="card-header">
+							<h4 class="card-title">Light Gallery</h4>
+						</div>
+						<div class="card-body pb-1">
+							<div id="lightgallery" class="row">
+								<a href="images/big/img1.jpg" data-exthumbimage="images/big/img1.jpg" data-src="images/big/img1.jpg" class="col-lg-3 col-md-6 mb-4">
+									<img src="images/big/img1.jpg" class="w-100" alt=""/>
+								</a>
+								<a href="images/big/img2.jpg" data-exthumbimage="images/big/img2.jpg" data-src="images/big/img2.jpg" class="col-lg-3 col-md-6 mb-4">
+									<img src="images/big/img2.jpg" alt="" class="w-100" />
+								</a>
+								<a href="images/big/img3.jpg" data-exthumbimage="images/big/img3.jpg" data-src="images/big/img3.jpg" class="col-lg-3 col-md-6 mb-4">
+									<img src="images/big/img3.jpg" alt="" class="w-100" />
+								</a>
+								<a href="images/big/img4.jpg" data-exthumbimage="images/big/img4.jpg" data-src="images/big/img4.jpg" class="col-lg-3 col-md-6 mb-4">
+									<img src="images/big/img4.jpg" alt="" class="w-100" />
+								</a>
+								<a href="images/big/img5.jpg" data-exthumbimage="images/big/img5.jpg" data-src="images/big/img5.jpg" class="col-lg-3 col-md-6 mb-4">
+									<img src="images/big/img5.jpg" alt="" class="w-100"/>
+								</a>
+								<a href="images/big/img6.jpg" data-exthumbimage="images/big/img6.jpg" data-src="images/big/img6.jpg" class="col-lg-3 col-md-6 mb-4">
+									<img src="images/big/img6.jpg" alt="" class="w-100" />
+								</a>
+								<a href="images/big/img7.jpg" data-exthumbimage="images/big/img7.jpg" data-src="images/big/img7.jpg" class="col-lg-3 col-md-6 mb-4">
+									<img src="images/big/img7.jpg" alt="" class="w-100" />
+								</a>
+								<a href="images/big/img8.jpg" data-exthumbimage="images/big/img8.jpg" data-src="images/big/img8.jpg" class="col-lg-3 col-md-6 mb-4">
+									<img src="images/big/img8.jpg" alt="" class="w-100" />
+								</a>
+								<a href="images/big/img4.jpg" data-exthumbimage="images/big/img4.jpg" data-src="images/big/img4.jpg" class="col-lg-3 col-md-6 mb-4">
+									<img src="images/big/img4.jpg" alt="" class="w-100" />
+								</a>
+								<a href="images/big/img4.jpg" data-exthumbimage="images/big/img4.jpg" data-src="images/big/img4.jpg" class="col-lg-3 col-md-6 mb-4">
+									<img src="images/big/img4.jpg" alt="" class="w-100" />
+								</a>
+							</div>
+						</div>
+					</div>
+					/# card
+				</div> -->
             </div>
         </div>
-		
+
 @endsection
