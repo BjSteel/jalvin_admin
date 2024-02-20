@@ -6,7 +6,7 @@
 			<div class="container-fluid">
                 <div class="form-head page-titles d-flex  align-items-center">
 					<div class="me-auto  d-lg-block">
-						<h2 class="text-black font-w600">{{ $name }}</h2>
+						<h2 class="text-black font-w600">{{ $property->name }}</h2>
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item active"><a href="javascript:void(0)">Property Details</a></li>
 						</ol>
