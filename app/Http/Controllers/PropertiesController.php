@@ -239,7 +239,7 @@ class PropertiesController extends Controller
 
     public function list(){
         $properties = Property::all();
-        return view('backend.properties.view', compact('properties'));
+        return view('backend.properties.list', compact('properties'));
     }
 
     public function view(Request $request, $id){
