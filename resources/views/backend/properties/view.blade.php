@@ -96,7 +96,7 @@
 							<div class="col-xl-12">
 								<div class="card">
 									<div class="card-body">
-										<div class="front-view-slider mb-sm-5 mb-3 owl-carousel">
+										<!-- <div class="front-view-slider mb-sm-5 mb-3 owl-carousel">
 											<div class="items">
 												<div class="front-view">
 													<img src="{{asset('images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1.jpg')}}" style="filter: brightness(50%);" alt="">
@@ -112,7 +112,7 @@
 													
 												</div>
 											</div>
-										</div>
+										</div> -->
 										<div>
 											<a href="javascript:void(0);" class="btn btn-primary rounded mb-4">ID : {{ $property->prop_id }}</a>
 											<div class="d-md-flex d-block mb-sm-5 mb-3">
@@ -174,48 +174,47 @@
 				</div>
 
 
-				<!-- <div class="col-lg-12">
+				<div class="col-lg-12">
 					<div class="card">
 						<div class="card-header">
 							<h4 class="card-title">Light Gallery</h4>
 						</div>
 						<div class="card-body pb-1">
 							<div id="lightgallery" class="row">
-								<a href="images/big/img1.jpg" data-exthumbimage="images/big/img1.jpg" data-src="images/big/img1.jpg" class="col-lg-3 col-md-6 mb-4">
-									<img src="images/big/img1.jpg" class="w-100" alt=""/>
+								<a href="{{ asset('images/big/img1.jpg') }}" data-exthumbimage="{{ asset('images/big/img1.jpg') }}" data-src="{{ asset('images/big/img1.jpg') }}" class="col-lg-3 col-md-6 mb-4">
+									<img src="{{ asset('images/big/img1.jpg') }}" class="w-100" alt=""/>
 								</a>
-								<a href="images/big/img2.jpg" data-exthumbimage="images/big/img2.jpg" data-src="images/big/img2.jpg" class="col-lg-3 col-md-6 mb-4">
-									<img src="images/big/img2.jpg" alt="" class="w-100" />
+								<a href="{{ asset('images/big/img2.jpg') }}" data-exthumbimage="{{ asset('images/big/img2.jpg') }}" data-src="{{ asset('images/big/img2.jpg') }}" class="col-lg-3 col-md-6 mb-4">
+									<img src="{{ asset('images/big/img2.jpg') }}" alt="" class="w-100" />
 								</a>
-								<a href="images/big/img3.jpg" data-exthumbimage="images/big/img3.jpg" data-src="images/big/img3.jpg" class="col-lg-3 col-md-6 mb-4">
-									<img src="images/big/img3.jpg" alt="" class="w-100" />
+								<a href="{{ asset('images/big/img3.jpg') }}" data-exthumbimage="{{ asset('images/big/img3.jpg') }}" data-src="{{ asset('images/big/img3.jpg') }}" class="col-lg-3 col-md-6 mb-4">
+									<img src="{{ asset('images/big/img3.jpg') }}" alt="" class="w-100" />
 								</a>
-								<a href="images/big/img4.jpg" data-exthumbimage="images/big/img4.jpg" data-src="images/big/img4.jpg" class="col-lg-3 col-md-6 mb-4">
-									<img src="images/big/img4.jpg" alt="" class="w-100" />
+								<a href="{{ asset('images/big/img4.jpg') }}" data-exthumbimage="{{ asset('images/big/img4.jpg') }}" data-src="{{ asset('images/big/img4.jpg') }}" class="col-lg-3 col-md-6 mb-4">
+									<img src="{{ asset('images/big/img4.jpg') }}" alt="" class="w-100" />
 								</a>
-								<a href="images/big/img5.jpg" data-exthumbimage="images/big/img5.jpg" data-src="images/big/img5.jpg" class="col-lg-3 col-md-6 mb-4">
-									<img src="images/big/img5.jpg" alt="" class="w-100"/>
+								<a href="{{ asset('images/big/img5.jpg') }}" data-exthumbimage="{{ asset('images/big/img5.jpg') }}" data-src="{{ asset('images/big/img5.jpg') }}" class="col-lg-3 col-md-6 mb-4">
+									<img src="{{ asset('images/big/img5.jpg') }}" alt="" class="w-100"/>
 								</a>
-								<a href="images/big/img6.jpg" data-exthumbimage="images/big/img6.jpg" data-src="images/big/img6.jpg" class="col-lg-3 col-md-6 mb-4">
-									<img src="images/big/img6.jpg" alt="" class="w-100" />
+								<a href="{{ asset('images/big/img6.jpg') }}" data-exthumbimage="{{ asset('images/big/img6.jpg') }}" data-src="{{ asset('images/big/img6.jpg') }}" class="col-lg-3 col-md-6 mb-4">
+									<img src="{{ asset('images/big/img6.jpg') }}" alt="" class="w-100" />
 								</a>
-								<a href="images/big/img7.jpg" data-exthumbimage="images/big/img7.jpg" data-src="images/big/img7.jpg" class="col-lg-3 col-md-6 mb-4">
-									<img src="images/big/img7.jpg" alt="" class="w-100" />
+								<a href="{{ asset('images/big/img7.jpg') }}" data-exthumbimage="{{ asset('images/big/img7.jpg') }}" data-src="{{ asset('images/big/img7.jpg') }}" class="col-lg-3 col-md-6 mb-4">
+									<img src="{{ asset('images/big/img7.jpg') }}" alt="" class="w-100" />
 								</a>
-								<a href="images/big/img8.jpg" data-exthumbimage="images/big/img8.jpg" data-src="images/big/img8.jpg" class="col-lg-3 col-md-6 mb-4">
-									<img src="images/big/img8.jpg" alt="" class="w-100" />
+								<a href="{{ asset('images/big/img8.jpg') }}" data-exthumbimage="{{ asset('images/big/img8.jpg') }}" data-src="{{ asset('images/big/img8.jpg') }}" class="col-lg-3 col-md-6 mb-4">
+									<img src="{{ asset('images/big/img8.jpg') }}" alt="" class="w-100" />
 								</a>
-								<a href="images/big/img4.jpg" data-exthumbimage="images/big/img4.jpg" data-src="images/big/img4.jpg" class="col-lg-3 col-md-6 mb-4">
-									<img src="images/big/img4.jpg" alt="" class="w-100" />
+								<a href="{{ asset('images/big/img4.jpg') }}" data-exthumbimage="{{ asset('images/big/img4.jpg') }}" data-src="{{ asset('images/big/img4.jpg') }}" class="col-lg-3 col-md-6 mb-4">
+									<img src="{{ asset('images/big/img4.jpg') }}" alt="" class="w-100" />
 								</a>
-								<a href="images/big/img4.jpg" data-exthumbimage="images/big/img4.jpg" data-src="images/big/img4.jpg" class="col-lg-3 col-md-6 mb-4">
-									<img src="images/big/img4.jpg" alt="" class="w-100" />
+								<a href="{{ asset('images/big/img4.jpg') }}" data-exthumbimage="{{ asset('images/big/img4.jpg') }}" data-src="{{ asset('images/big/img4.jpg') }}" class="col-lg-3 col-md-6 mb-4">
+									<img src="{{ asset('images/big/img4.jpg') }}" alt="" class="w-100" />
 								</a>
 							</div>
 						</div>
 					</div>
-					/# card
-				</div> -->
+				</div>
             </div>
         </div>
 
