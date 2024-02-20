@@ -99,7 +99,7 @@
 										<div class="front-view-slider mb-sm-5 mb-3 owl-carousel">
 											<div class="items">
 												<div class="front-view">
-													<img src="images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1.jpg" style="filter: brightness(50%);" alt="">
+													<img src="{{asset('images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1.jpg')}}" style="filter: brightness(50%);" alt="">
 													<div class="info">
 														<h3 class="fs-30 mb-2 text-white font-w600">Front View</h3>
 														</div>
@@ -108,51 +108,8 @@
 											
 											<div class="items">
 												<div class="front-view">
-													<img src="images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1 cinema.jpg" style="filter: brightness(50%);" alt="">
+													<img src="{{asset('images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1 cinema.jpg')}}" style="filter: brightness(50%);" alt="">
 													
-												</div>
-											</div>
-
-											<div class="items">
-												<div class="front-view">
-													<img src="images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1 closet 2.jpg" style="filter: brightness(50%);" alt="">
-													
-												</div>
-											</div>
-
-											<div class="items">
-												<div class="front-view">
-													<img src="images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1 kitchen.jpg" style="filter: brightness(50%);" alt="">
-													
-												</div>
-											</div>
-
-											<div class="items">
-												<div class="front-view">
-													<img src="images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1 lounge.jpg" style="filter: brightness(50%);" alt="">
-													
-												</div>
-											</div>
-
-											<div class="items">
-												<div class="front-view">
-													<img src="images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1 sitting room.jpg" style="filter: brightness(50%);" alt="">
-													
-												</div>
-											</div>
-
-											<div class="items">
-												<div class="front-view">
-													<img src="images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1 swimming .jpg" style="filter: brightness(50%);" alt="">
-													
-												</div>
-											</div>
-											
-
-											
-											<div class="items">
-												<div class="front-view">
-													<img src="images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1 bath.jpg" style="filter: brightness(50%);" alt="">
 												</div>
 											</div>
 										</div>
