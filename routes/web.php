@@ -22,5 +22,6 @@ Route::group(['middleware' => ['auth']], function(){
     Route::match(['get','post'], '/add-property', 'PropertiesController@add')->name('properties.add');
     Route::get('/list-property', 'PropertiesController@list')->name('properties.list');
     Route::get('/view-property/{id}', 'PropertiesController@view')->name('properties.view');
+    Route::get('/delete-property/{id}', 'PropertiesController@delete')->name('properties.delete');
     Route::match(['get','post'],'/update-property/{id}', 'PropertiesController@view')->name('properties.update');
 });

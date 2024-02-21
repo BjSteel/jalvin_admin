@@ -237,6 +237,11 @@ class PropertiesController extends Controller
         }
     }
 
+    public function delete($id){
+        $property = Property::find($id);
+        $property->delete();
+        return redirect()->route('properties.list')->with('success', 'Property Deleted successfully');
+    }
     public function list(){
         $properties = Property::all();
         return view('backend.properties.list', compact('properties'));

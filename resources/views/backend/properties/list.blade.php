@@ -80,7 +80,7 @@
 														</div>
 														<div class="dropdown-menu dropdown-menu-end">
 															<a class="dropdown-item" href="{{route('properties.update', $property->id)}}">Edit Property</a>
-															<a class="dropdown-item" href="#">Delete Property</a>
+															<a class="dropdown-item" href="{{route('properties.delete', $property->id)}}">Delete Property</a>
 															<a class="dropdown-item" href="{{route('properties.view', $property->id)}}">View Property</a>
 														</div>
 													</div>
