@@ -28,12 +28,12 @@
 												<form action="{{ route('properties.add') }}" method="post" enctype="multipart/form-data">
 													@csrf
 													<div class="form-group span3 mb-3">
-														<input type="text" placeholder=" Name:" name="name">
-														<input type="text" placeholder="Address:" name="address">
-														<input type="text" placeholder="Price:" name="price">
+														<input type="text" placeholder=" Name:" name="name" required>
+														<input type="text" placeholder="Address:" name="address" required>
+														<input type="text" placeholder="Price:" name="price" required>
 													</div>
 													<div class="form-group span4 mb-3">
-												<select name="city" id="city">
+												<select name="city" id="city" required>
 													<option value="" disabled selected>Select City</option>
 													<option value="null">---</option>
 													<option value="abuja">Abuja</option>
@@ -42,14 +42,14 @@
 													<option value="ibadan">Ibadan</option>
 													<option value="dubai">Dubai</option>
 												</select>
-												<select name="country" id="country">
+												<select name="country" id="country" required>
 													<option value="" disabled selected>Select country</option>
 													<option value="null">---</option>
 													<option value="nigeria">nigeria</option>
 													<option value="uae">United Arab Emirates (UAE)</option>
 												</select>
 
-												<select name="beds" id="beds">
+												<select name="beds" id="beds" required>
 													<option value="" disabled selected>Select Beds</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -60,7 +60,7 @@
 													<option value="7+">7+</option>
 												</select>
 
-												<select name="baths" id="bath">
+												<select name="baths" id="bath" required>
 													<option value="" disabled selected>Select Bath</option>
 													<option value="1">1</option>
 													<option value="2">2</option>
@@ -73,8 +73,8 @@
 													</div>
 
 													<div class="form-group span2 mb-3">
-														<input type="number" placeholder="Year Built" name="year">
-														<input type="text" placeholder="Property Size" name="size">
+														<input type="number" placeholder="Year Built" name="year" required>
+														<input type="text" placeholder="Property Size" name="size" required>
 													</div>
 
 													<div class="feats">

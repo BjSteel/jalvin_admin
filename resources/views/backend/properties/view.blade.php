@@ -168,7 +168,7 @@
 								<a href="{{ storage_asset($property->prop_id.'/'.$image) }}" data-exthumbimage="{{ storage_asset($property->prop_id.'/'.$image) }}" data-src="{{ storage_asset($property->prop_id.'/'.$image) }}" class="col-lg-3 col-md-6 mb-4">
 									<img src="{{ storage_asset($property->prop_id.'/'.$image) }}" class="w-100" alt=""/>
 								</a>
-							@endforeah
+							@endforeach
 								</a>
 							</div>
 						</div>
