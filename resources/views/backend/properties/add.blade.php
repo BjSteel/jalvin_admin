@@ -323,7 +323,7 @@
 												<h5 class="mb-4"><i class="fa fa-paperclip"></i> Add Property Images</h5>
 												<!-- <div action="#" class="dropzone"> -->
 													<div class="fallback">
-														<input name="images" type="file" multiple />
+														<input name="images[]" type="file" multiple required/>
 													</div>
 												<!-- </div> -->
 											</div>
