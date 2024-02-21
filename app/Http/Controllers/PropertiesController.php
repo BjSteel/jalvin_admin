@@ -38,7 +38,7 @@ class PropertiesController extends Controller
             $images = array();
             foreach($request->file('images') as $file){
                 $name=date('mdYHis').$file->getClientOriginalName();
-                Storage::disk('ftp')->put('properties/'.$id.'/'.$name, fopen($file, 'r+'));
+                // Storage::disk('ftp')->put('properties/'.$id.'/'.$name, fopen($file, 'r+'));
                 array_push($images, $name);
             }
 
