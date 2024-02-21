@@ -89,7 +89,7 @@ if (!function_exists('decimalPlace')) {
 if (!function_exists('storage_asset')) {
 	function storage_asset($path) {
 
-		return 'https://storage.suyauniversity.com/'.$path;
+		return 'https://storage.jalvinhomes.com/'.$path;
 		
 
 	}

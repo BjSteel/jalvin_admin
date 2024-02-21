@@ -32,11 +32,8 @@
                                                 <th>Beds</th>
                                                 <th>Property Size</th>
                                                 <th>Status</th>
-                                                <th>Property Address</th>
                                                 <th>Property City</th>
                                                 <th>Property Area</th>
-                                                <th>Property State</th>
-                                                <th>Property Country</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
@@ -74,11 +71,8 @@
 														Featured
 													</span>
 												</td>
-                                                <td>{{ $property->address}}</td>
                                                 <td>{{$property->city}}</td>
                                                 <td>Lekki</td>
-                                                <td>{{ $property->state }}</td>
-                                                <td>{{$property->country}}</td>
                                                 <td>
 													<div class="dropdown ms-auto text-end">
 														<div class="btn-link" data-bs-toggle="dropdown">

@@ -11,7 +11,7 @@
 							<li class="breadcrumb-item active"><a href="javascript:void(0)">Property Details</a></li>
 						</ol>
 					</div>
-					<button href="javascript:void(0);" class="btn btn-danger rounded me-3">Update Info</button>
+					<button href="{{ route('properties.update', $property->id)}}" class="btn btn-danger rounded me-3">Update Info</button>
 				</div>
 				<div class="row">
 					<div class="col-xl-3 col-xxl-4">
@@ -96,23 +96,6 @@
 							<div class="col-xl-12">
 								<div class="card">
 									<div class="card-body">
-										<!-- <div class="front-view-slider mb-sm-5 mb-3 owl-carousel">
-											<div class="items">
-												<div class="front-view">
-													<img src="{{asset('images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1.jpeg')}}" style="filter: brightness(50%);" alt="">
-													<div class="info">
-														<h3 class="fs-30 mb-2 text-white font-w600">Front View</h3>
-														</div>
-												</div>
-											</div>
-											
-											<div class="items">
-												<div class="front-view">
-													<img src="{{asset('images/5BEDROOM CONTEMPORARY DETACHED DUPLEX lekki phase 1 cinema.jpeg')}}" style="filter: brightness(50%);" alt="">
-													
-												</div>
-											</div>
-										</div> -->
 										<div>
 											<a href="javascript:void(0);" class="btn btn-primary rounded mb-4">ID : {{ $property->prop_id }}</a>
 											<div class="d-md-flex d-block mb-sm-5 mb-3">
@@ -181,35 +164,11 @@
 						</div>
 						<div class="card-body pb-1">
 							<div id="lightgallery" class="row">
-								<a href="{{ asset('images/img1.jpeg') }}" data-exthumbimage="{{ asset('images/img1.jpeg') }}" data-src="{{ asset('images/img1.jpeg') }}" class="col-lg-3 col-md-6 mb-4">
-									<img src="{{ asset('images/img1.jpeg') }}" class="w-100" alt=""/>
+							@foreach(json_decode($property->images) as $image)
+								<a href="{{ storage_asset($property->prop_id.'/'.$image) }}" data-exthumbimage="{{ storage_asset($property->prop_id.'/'.$image) }}" data-src="{{ storage_asset($property->prop_id.'/'.$image) }}" class="col-lg-3 col-md-6 mb-4">
+									<img src="{{ storage_asset($property->prop_id.'/'.$image) }}" class="w-100" alt=""/>
 								</a>
-								<a href="{{ asset('images/img2.jpeg') }}" data-exthumbimage="{{ asset('images/img2.jpeg') }}" data-src="{{ asset('images/img2.jpeg') }}" class="col-lg-3 col-md-6 mb-4">
-									<img src="{{ asset('images/img2.jpeg') }}" alt="" class="w-100" />
-								</a>
-								<a href="{{ asset('images/img3.jpeg') }}" data-exthumbimage="{{ asset('images/img3.jpeg') }}" data-src="{{ asset('images/img3.jpeg') }}" class="col-lg-3 col-md-6 mb-4">
-									<img src="{{ asset('images/img3.jpeg') }}" alt="" class="w-100" />
-								</a>
-								<a href="{{ asset('images/img4.jpeg') }}" data-exthumbimage="{{ asset('images/img4.jpeg') }}" data-src="{{ asset('images/img4.jpeg') }}" class="col-lg-3 col-md-6 mb-4">
-									<img src="{{ asset('images/img4.jpeg') }}" alt="" class="w-100" />
-								</a>
-								<a href="{{ asset('images/img5.jpeg') }}" data-exthumbimage="{{ asset('images/img5.jpeg') }}" data-src="{{ asset('images/img5.jpeg') }}" class="col-lg-3 col-md-6 mb-4">
-									<img src="{{ asset('images/img5.jpeg') }}" alt="" class="w-100"/>
-								</a>
-								<a href="{{ asset('images/img6.jpeg') }}" data-exthumbimage="{{ asset('images/img6.jpeg') }}" data-src="{{ asset('images/img6.jpeg') }}" class="col-lg-3 col-md-6 mb-4">
-									<img src="{{ asset('images/img6.jpeg') }}" alt="" class="w-100" />
-								</a>
-								<a href="{{ asset('images/img7.jpeg') }}" data-exthumbimage="{{ asset('images/img7.jpeg') }}" data-src="{{ asset('images/img7.jpeg') }}" class="col-lg-3 col-md-6 mb-4">
-									<img src="{{ asset('images/img7.jpeg') }}" alt="" class="w-100" />
-								</a>
-								<a href="{{ asset('images/img8.jpeg') }}" data-exthumbimage="{{ asset('images/img8.jpeg') }}" data-src="{{ asset('images/img8.jpeg') }}" class="col-lg-3 col-md-6 mb-4">
-									<img src="{{ asset('images/img8.jpeg') }}" alt="" class="w-100" />
-								</a>
-								<a href="{{ asset('images/img4.jpeg') }}" data-exthumbimage="{{ asset('images/img4.jpeg') }}" data-src="{{ asset('images/img4.jpeg') }}" class="col-lg-3 col-md-6 mb-4">
-									<img src="{{ asset('images/img4.jpeg') }}" alt="" class="w-100" />
-								</a>
-								<a href="{{ asset('images/img4.jpeg') }}" data-exthumbimage="{{ asset('images/img4.jpeg') }}" data-src="{{ asset('images/img4.jpeg') }}" class="col-lg-3 col-md-6 mb-4">
-									<img src="{{ asset('images/img4.jpeg') }}" alt="" class="w-100" />
+							@endforeah
 								</a>
 							</div>
 						</div>
