@@ -147,29 +147,22 @@
 									</div>
 								</div>
 							</div>
-
-
-							
-
-
-						</div>
-					</div>
-				</div>
-
-
-				<div class="col-lg-12">
-					<div class="card">
-						<div class="card-header">
-							<h4 class="card-title">Light Gallery</h4>
-						</div>
-						<div class="card-body pb-1">
-							<div id="lightgallery" class="row">
-							@foreach(json_decode($property->images) as $image)
-								<a href="{{ storage_asset($property->prop_id.'/'.$image) }}" data-exthumbimage="{{ storage_asset($property->prop_id.'/'.$image) }}" data-src="{{ storage_asset($property->prop_id.'/'.$image) }}" class="col-lg-3 col-md-6 mb-4">
-									<img src="{{ storage_asset($property->prop_id.'/'.$image) }}" class="w-100" alt=""/>
-								</a>
-							@endforeach
-								</a>
+							<div class="col-xl-12">
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">Light Gallery</h4>
+									</div>
+									<div class="card-body pb-1">
+										<div id="lightgallery" class="row">
+										@foreach(json_decode($property->images) as $image)
+											<a href="{{ storage_asset($property->prop_id.'/'.$image) }}" data-exthumbimage="{{ storage_asset($property->prop_id.'/'.$image) }}" data-src="{{ storage_asset($property->prop_id.'/'.$image) }}" class="col-lg-3 col-md-6 mb-4">
+												<img src="{{ storage_asset($property->prop_id.'/'.$image) }}" class="w-100" alt=""/>
+											</a>
+										@endforeach
+											</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
