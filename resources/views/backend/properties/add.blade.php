@@ -42,7 +42,6 @@
 													<option value="ibadan">Ibadan</option>
 													<option value="dubai">Dubai</option>
 												</select>
-
 												<select name="country" id="country">
 													<option value="" disabled selected>Select country</option>
 													<option value="null">---</option>
