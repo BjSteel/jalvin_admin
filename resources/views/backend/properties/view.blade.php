@@ -12,8 +12,7 @@
 						</ol>
 					</div>
 					<a href="{{ route('properties.update', $property->id)}}" class="btn btn-danger rounded me-3">Update Info</a>
-					<a href="{{ route('properties.delete', $property->id)}}" class="btn btn-danger rounded me-3">Delete Property</a>
-					<a href="{{ route('properties.delete', $property->id)}}" class="btn btn-danger rounded me-3" style="background-color: #fff;color: #FF6746;"><i class="las la-trash" style="color: #FF6746;"></i></a>
+					<a href="{{ route('properties.delete', $property->id)}}" class="btn btn-danger rounded me-3" style="background-color: #fff;color: #FF6746;"><i class="las la-trash" style="color: #FF6746;"></i>Delete</a>
 				</div>
 				<div class="row">
 					<div class="col-xl-3 col-xxl-4">
