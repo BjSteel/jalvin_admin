@@ -8,7 +8,7 @@ class BackendController extends Controller
 {
     public function index(){
         $data = array();
-        $data['total_properties'] = Property::count();;
+        $data['total_properties'] = number_format(Property::count());
         $data['residential'] = countWordOccurrences('list','type', 'residential');
         $data['commercial'] = countWordOccurrences('list','type', 'commercial');
         $data['fully_detached_duplex'] = countWordOccurrences('list','type', 'fully_detached_duplex');
