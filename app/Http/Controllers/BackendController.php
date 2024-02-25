@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Property;
 use Illuminate\Http\Request;
 
-class DashboardController extends Controller
+class BackendController extends Controller
 {
     public function index(){
         $data = array();
