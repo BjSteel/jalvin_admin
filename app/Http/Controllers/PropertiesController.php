@@ -28,7 +28,7 @@ class PropertiesController extends Controller
             ]);
     
             if ($validator->fails()) {
-                return redirect()->route('properties.add')
+                return redirect()->route('backend.properties.add')
                         ->withErrors($validator)
                         ->withInput();
             }
@@ -229,14 +229,14 @@ class PropertiesController extends Controller
             $property->images   = json_encode($images);
             $property->save();
     
-            return redirect()->route('properties.add')->with('success', 'Property added successfully');
+            return redirect()->route('backend.properties.add')->with('success', 'Property added successfully');
         }
     }
 
     public function delete($id){
         $property = Property::find($id);
         $property->delete();
-        return redirect()->route('properties.list')->with('success', 'Property Deleted successfully');
+        return redirect()->route('backend.properties.list')->with('success', 'Property Deleted successfully');
     }
     public function list(){
         $properties = Property::all();
@@ -248,10 +248,10 @@ class PropertiesController extends Controller
         return view('backend.properties.view',compact('property'));
     }
 
-    public function update(Request $request, $id){
+    public function update(Request $request, $id) {
         if($request->isMethod('get')){
-            $properties = Property::find($id);
-            return view('backend.properties.update', compact($properties));
+            $property = Property::find($id);
+            return view('backend.properties.update')->with($property);
         }else{
             $validator = Validator::make($request->all(), [
                 'name'             => 'required',
@@ -266,114 +266,110 @@ class PropertiesController extends Controller
             ]);
     
             if ($validator->fails()) {
-                return redirect()->route('properties.add')
+                return redirect()->route('backend.properties.add')
                         ->withErrors($validator)
                         ->withInput();
             }
-            $id = generateUniqueId();
-
             $status = array();
             if ($request->input('ready_to_move') == 1) {
-                array_push($status, 'Ready to move in');
+                array_push($status, 'ready_to_move_in');
             }
             if ($request->input('sold_out') == 1) {
-                array_push($status, 'Sold out');
+                array_push($status, 'sold_out');
             }
             if ($request->input('open_house') == 1) {
-                array_push($status, 'Open house');
+                array_push($status, 'open_house');
             }
             if ($request->input('reduced_price') == 1) {
-                array_push($status, 'Reduced price');
+                array_push($status, 'reduced_price');
             }
             if ($request->input('resale') == 1) {
-                array_push($status, 'Resale');
+                array_push($status, 'resale');
             }
             if ($request->input('off_plan') == 1) {
-                array_push($status, 'Off-plan project');
+                array_push($status, 'off-plan_project');
             }
             if ($request->input('new_listing') == 1) {
-                array_push($status, 'New listing');
+                array_push($status, 'new_listing');
             }
             if ($request->input('for_sale') == 1) {
-                array_push($status, 'For sale');
+                array_push($status, 'for_sale');
             }
-            
 
             $type = array();
             if ($request->input('residential') == 1) {
-                array_push($type, 'Residential');
+                array_push($type, 'residential');
             }
             if ($request->input('commercial') == 1) {
-                array_push($type, 'Commercial');
+                array_push($type, 'commercial');
             }
             if ($request->input('fully_detached_duplex') == 1) {
-                array_push($type, 'Fully Detached Duplex');
+                array_push($type, 'fully_detached_duplex');
             }
             if ($request->input('semi_detatched_duplex') == 1) {
-                array_push($type, 'Semi Detached Duplex');
+                array_push($type, 'semi_detatched_duplex');
             }
             if ($request->input('bungalow') == 1) {
-                array_push($type, 'Bungalow');
+                array_push($type, 'bungalow');
             }
             if ($request->input('penthouse') == 1) {
-                array_push($type, 'Penthouse');
+                array_push($type, 'penthouse');
             }
             if ($request->input('terrace') == 1) {
-                array_push($type, 'Terrace');
+                array_push($type, 'terrace');
             }
             if ($request->input('apartment') == 1) {
-                array_push($type, 'Apartment');
+                array_push($type, 'apartment');
             }
             if ($request->input('massiontte') == 1) {
-                array_push($type, 'Maisontte');
+                array_push($type, 'maisonette');
             }
-            if ($request->input('residential land') == 1) {
-                array_push($type, 'Residential Land');
+            if ($request->input('residential_land') == 1) {
+                array_push($type, 'residential_land');
             }
             if ($request->input('commercial_land') == 1) {
-                array_push($type, 'Commercial Land');
+                array_push($type, 'commercial_land');
             }
             if ($request->input('office') == 1) {
                 array_push($type, 'office');
             }
-            
 
             $features = array();
             if ($request->input('fitted_kitchen') == 1) {
-                array_push($features, 'Fitted Kitchen With Accessories');
+                array_push($features, 'fitted_kitchen_with_accessories');
             }
             if ($request->input('24_hour_security') == 1) {
-                array_push($features, '24 Hour Security');
+                array_push($features, '24_hour_security');
             }
             if ($request->input('modern_pop_ceiling') == 1) {
-                array_push($features, 'Modern Day POP Ceiling');
+                array_push($features, 'modern_day_pop_ceiling');
             }
             if ($request->input('detailed_finishing') == 1) {
-                array_push($features, 'Detailed Finishing');
+                array_push($features, 'detailed_finishing');
             }
             if ($request->input('wardrobes') == 1) {
-                array_push($features, 'Wardrobes');
+                array_push($features, 'wardrobes');
             }
             if ($request->input('jacuzzi') == 1) {
                 array_push($features, 'jacuzzi');
             }
             if ($request->input('cctv') == 1) {
-                array_push($features, 'CCTV');
+                array_push($features, 'cctv');
             }
             if ($request->input('automated_lights') == 1) {
-                array_push($features, 'Automated Light');
+                array_push($features, 'automated_light');
             }
             if ($request->input('water_heater') == 1) {
-                array_push($features, 'water heater');
+                array_push($features, 'water_heater');
             }
             if ($request->input('clean_water') == 1) {
-                array_push($features, 'clean water');
+                array_push($features, 'clean_water');
             }
             if ($request->input('heat_extractor') == 1) {
-                array_push($features, 'Heat Extractor');
+                array_push($features, 'heat_extractor');
             }
             if ($request->input('ample_parking_space') == 1) {
-                array_push($features, 'Ample Parking Space');
+                array_push($features, 'ample_parking_space');
             }
             if ($request->input('gym') == 1) {
                 array_push($features, 'gym');
@@ -382,68 +378,66 @@ class PropertiesController extends Controller
                 array_push($features, 'cinema');
             }
             if ($request->input('swimming_pool') == 1) {
-                array_push($features, 'swimming pool');
+                array_push($features, 'swimming_pool');
             }
             if ($request->input('boys_quaters') == 1) {
-                array_push($features, 'comes with boys quarters');
+                array_push($features, 'comes_with_boys_quarters');
             }
             if ($request->input('elevator') == 1) {
                 array_push($features, 'elevator');
             }
             if ($request->input('installed_soundsystem') == 1) {
-                array_push($features, 'installed bluetooth speakers');
+                array_push($features, 'installed_bluetooth_speakers');
             }
             if ($request->input('beach_front') == 1) {
-                array_push($features, 'beach front');
+                array_push($features, 'beach_front');
             }
             if ($request->input('gate_house') == 1) {
-                array_push($features, 'Gate house');
+                array_push($features, 'gate_house');
             }
             if ($request->input('good_drainage') == 1) {
-                array_push($features, 'Good drainage');
+                array_push($features, 'good_drainage');
             }
             if ($request->input('lagoon_front_view') == 1) {
-                array_push($features, 'lagoon front view');
+                array_push($features, 'lagoon_front_view');
             }
             if ($request->input('fully_furnished') == 1) {
-                array_push($features, 'fully furnished');
+                array_push($features, 'fully_furnished');
             }
             if ($request->input('air_conditioning') == 1) {
-                array_push($features, 'air conditioning');
+                array_push($features, 'air_conditioning');
             }
             if ($request->input('shildren_playgroud') == 1) {
-                array_push($features, 'chilren\'s playground');
+                array_push($features, 'chilrens_playground');
             }
             if ($request->input('barbeque') == 1) {
                 array_push($features, 'barbeque');
             }
             if ($request->input('spacious_compound') == 1) {
-                array_push($features, 'spacious compound');
+                array_push($features, 'spacious_compound');
             }
             if ($request->input('estate_lounge') == 1) {
-                array_push($features, 'estate lounge');
+                array_push($features, 'estate_lounge');
             }
             if ($request->input('close_to_landmark') == 1) {
-                array_push($features, 'close to landmark');
+                array_push($features, 'close_to_landmark');
             }
             if ($request->input('smart_home') == 1) {
-                array_push($features, 'smart home');
+                array_push($features, 'smart_home');
             }
             if ($request->input('category') == 1) {
-                array_push($features, 'dry land');
+                array_push($features, 'dry_land');
             }
             if ($request->input('wet_land') == 1) {
-                array_push($features, 'wet land');
+                array_push($features, 'wet_land');
             }
             if ($request->input('government_approved') == 1) {
-                array_push($features, 'goverment approved');
+                array_push($features, 'goverment_approved');
             }
             if ($request->input('with_c_of_o') == 1) {
-                array_push($features, 'with c of o');
+                array_push($features, 'with_c_of_o');
             }
-            if ($request->input('gate_house') == 1) {
-                array_push($features, 'gate house');
-            }
+
             
 
             $property                   = Property::find($id);
@@ -461,7 +455,7 @@ class PropertiesController extends Controller
             $property->features   = json_encode($features);
             $property->save();
     
-            return redirect()->route('properties.view', $id)->with('success', 'Property Updated successfully');
+            return redirect()->route('backend.properties.view', $id)->with('success', 'Property added successfully');
         }
     }
 }
