@@ -97,9 +97,9 @@ if (!function_exists('storage_asset')) {
 
 }
 
-function countWordOccurrences($data_type, $column, $word){
+function countWordOccurrenceslistform($data_type, $column, $word){
 	// Initialize an array to store the counts
-	$wordCounts = 0;
+	$wordCounts = [];
 
 	// Get all properties from the database
 	$properties = Property::all();
@@ -129,9 +129,44 @@ function countWordOccurrences($data_type, $column, $word){
 		}
 
 		// Store the count for the current property
-		$wordCounts = $count;
+		$wordCounts[$property->id] = $count;
 	}
 
 	// Return the word counts
-	return number_format($wordCounts);
+	return $wordCounts;
+}
+
+function countWordOccurrences($data_type, $column, $word){
+    // Initialize a variable to store the total count
+    $totalCount = 0;
+
+    // Get all properties from the database
+    $properties = Property::all();
+
+    // Loop through each property
+    foreach ($properties as $property) {
+        // Decode the JSON data in the property_type column if needed
+        if($data_type == 'list'){
+            $propertyTypes = json_decode($property->$column);
+        } else {
+            $propertyTypes = [$property->$column];
+        }
+
+        // Check if the decoded property types is an array
+        if (is_array($propertyTypes)) {
+            // Loop through each property type
+            foreach ($propertyTypes as $type) {
+                // Check if the word exists in the property type
+                if (strpos($type, $word) !== false) {
+                    // Increment the total count if the word exists
+                    $totalCount++;
+                    // Break the loop to ensure each word is counted only once per row
+                    break;
+                }
+            }
+        }
+    }
+
+    // Return the total word count
+    return number_format($totalCount);
 }
