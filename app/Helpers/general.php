@@ -1,4 +1,5 @@
 <?php
+use App\Models\Property;
 
 if (!function_exists('generateUniqueId')) {
 	function generateUniqueId() {
@@ -94,4 +95,43 @@ if (!function_exists('storage_asset')) {
 
 	}
 
+}
+
+function countWordOccurrences($data_type, $column, $word){
+	// Initialize an array to store the counts
+	$wordCounts = [];
+
+	// Get all properties from the database
+	$properties = Property::all();
+
+	// Loop through each property
+	foreach ($properties as $property) {
+		// Decode the JSON data in the property_type column
+		if($data_type == 'list'){
+			$propertyTypes = json_decode($property->$column);
+		}else{
+			$propertyTypes = $property->$column;
+		}
+
+		// Initialize count for the current property
+		$count = 0;
+
+		// Check if the decoded property types is an array
+		if (is_array($propertyTypes)) {
+			// Loop through each property type
+			foreach ($propertyTypes as $type) {
+				// Check if the word exists in the property type
+				if (strpos($type, $word) !== false) {
+					// Increment the count if the word exists
+					$count++;
+				}
+			}
+		}
+
+		// Store the count for the current property
+		$wordCounts[$property->id] = $count;
+	}
+
+	// Return the word counts
+	return number_format($wordCounts[]);
 }

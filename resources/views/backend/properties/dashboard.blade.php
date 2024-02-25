@@ -31,9 +31,9 @@
 														<span class="sr-only">86% Complete</span>
 													</div>
 												</div>
-												<span class="fs-14">431 more to break last month record</span>
+												<!-- <span class="fs-14">431 more to break last month record</span> -->
 											</div>
-											<span class="fs-46 font-w500">4,562</span>
+											<span class="fs-46 font-w500">{{ $total_properties }}</span>
 										</div>
 									</div>
 								</div>
@@ -43,7 +43,7 @@
 									<div class="card-body">
 										<div class="media align-items-center">
 											<div class="media-body me-3">	
-												<h2 class="fs-36 text-black font-w600">2,356</h2>
+												<h2 class="fs-36 text-black font-w600">{{ $residential }}</h2>
 												<p class="fs-18 mb-0 text-black font-w500">Residential</p>
 												<span class="fs-13">Target 3k/month</span>
 											</div>
@@ -61,7 +61,7 @@
 									<div class="card-body">
 										<div class="media align-items-center">
 											<div class="media-body me-3">	
-												<h2 class="fs-36 text-black font-w600">2,206</h2>
+												<h2 class="fs-36 text-black font-w600">{{ $commercial }}</h2>
 												<p class="fs-18 mb-0 text-black font-w500">Commercial</p>
 												<span class="fs-13">Target 3k/month</span>
 											</div>
@@ -86,144 +86,59 @@
 									</div>
 									<div class="card-body">
 										<div class="row">
-											<div class="col-lg-12">
-												<!-- <div class="progress mb-4" style="height:10px">
+											<!-- <div class="progress mb-4" style="height:10px">
 													<div class="progress-bar bg-primary progress-animated" style="width:100%; height:10px;" role="progressbar">
 														<span class="sr-only">75% Complete</span>
 													</div>
 												</div> -->
-												<p class="mb-2 d-flex align-items-center  fs-16 text-black font-w500">Fully Detached Duplex
-													<span class="pull-right text-dark fs-14 ms-2">18 Properties</span>
-												</p>
-												<!-- <div class="progress mb-4" style="height:10px">
-													<div class="progress-bar bg-primary progress-animated" style="width:75%; height:10px;" role="progressbar">
-														<span class="sr-only">75% Complete</span>
-													</div>
-												</div> -->
-												<p class="mb-2 d-flex align-items-center  fs-16 text-black font-w500">Semi Detached Duplex
-													<span class="pull-right text-dark fs-14 ms-2">53 Properties</span>
-												</p>
-												<!-- <div class="progress mb-4" style="height:10px">
-													<div class="progress-bar bg-primary progress-animated" style="width:50%; height:10px;" role="progressbar">
-														<span class="sr-only">50% Complete</span>
-													</div>
-												</div> -->
-												<p class="mb-2 d-flex align-items-center  fs-16 text-black font-w500">Terrace Duplex
-													<span class="pull-right text-dark fs-14 ms-2">45 Properties</span>
-												</p>
-												<!-- <div class="progress mb-4" style="height:10px">
-													<div class="progress-bar bg-primary progress-animated" style="width:70%; height:10px;" role="progressbar">
-														<span class="sr-only">70% Complete</span>
-													</div>
-												</div> -->
-												<p class="mb-2 d-flex align-items-center  fs-16 text-black font-w500">Bungalow
-													<span class="pull-right text-dark fs-14 ms-2">120 Proprties</span>
-												</p>
-												<!-- <div class="progress mb-4" style="height:10px">
-													<div class="progress-bar bg-primary progress-animated" style="width:40%; height:10px;" role="progressbar">
-														<span class="sr-only">40% Complete</span>
-													</div>
-												</div> -->
+												<div class="col-lg-12">
+													<p class="mb-2 d-flex align-items-center fs-16 text-black font-w500">Fully Detached Duplex
+														<span class="pull-right text-dark fs-14 ms-2">{{ $fully_detached_duplex }} Properties</span>
+													</p>
+													<p class="mb-2 d-flex align-items-center fs-16 text-black font-w500">Semi Detached Duplex
+														<span class="pull-right text-dark fs-14 ms-2">{{ $semi_detached_duplex }} Properties</span>
+													</p>
+													<p class="mb-2 d-flex align-items-center fs-16 text-black font-w500">Terrace Duplex
+														<span class="pull-right text-dark fs-14 ms-2">{{ $terrace_duplex }} Properties</span>
+													</p>
+													<p class="mb-2 d-flex align-items-center fs-16 text-black font-w500">Bungalow
+														<span class="pull-right text-dark fs-14 ms-2">{{ $bungalow }} Properties</span>
+													</p>
+													<p class="mb-2 d-flex align-items-center fs-16 text-black font-w500">Apartment
+														<span class="pull-right text-dark fs-14 ms-2">{{ $apartment }} Properties</span>
+													</p>
+													<p class="mb-2 d-flex align-items-center fs-16 text-black font-w500">Maisontte
+														<span class="pull-right text-dark fs-14 ms-2">{{ $maisontte }} Properties</span>
+													</p>
+													<p class="mb-2 d-flex align-items-center fs-16 text-black font-w500">Penthouse
+														<span class="pull-right text-dark fs-14 ms-2">{{ $penthouse }} Properties</span>
+													</p>
+													<p class="mb-2 d-flex align-items-center fs-16 text-black font-w500">Residential Land
+														<span class="pull-right text-dark fs-14 ms-2">{{ $residential_land }} Properties</span>
+													</p>
+													<p class="mb-2 d-flex align-items-center fs-16 text-black font-w500">Commercial Land
+														<span class="pull-right text-dark fs-14 ms-2">{{ $commercial_land }} Properties</span>
+													</p>
+													<p class="mb-2 d-flex align-items-center fs-16 text-black font-w500">Office
+														<span class="pull-right text-dark fs-14 ms-2">{{ $office }} Properties</span>
+													</p>
+													<p class="mb-2 d-flex align-items-center fs-16 text-black font-w500">Abuja
+														<span class="pull-right text-dark fs-14 ms-2">{{ $abuja }} Properties</span>
+													</p>
+													<p class="mb-2 d-flex align-items-center fs-16 text-black font-w500">Lagos Island
+														<span class="pull-right text-dark fs-14 ms-2">{{ $lagos_island }} Properties</span>
+													</p>
+													<p class="mb-2 d-flex align-items-center fs-16 text-black font-w500">Lagos Mainland
+														<span class="pull-right text-dark fs-14 ms-2">{{ $lagos_mainland }} Properties</span>
+													</p>
+													<p class="mb-2 d-flex align-items-center fs-16 text-black font-w500">Ibadan
+														<span class="pull-right text-dark fs-14 ms-2">{{ $ibadan }} Properties</span>
+													</p>
+													<p class="mb-2 d-flex align-items-center fs-16 text-black font-w500">Dubai
+														<span class="pull-right text-dark fs-14 ms-2">{{ $dubai }} Properties</span>
+													</p>
+												</div>
 
-												<p class="mb-2 d-flex align-items-center  fs-16 text-black font-w500">Apartment
-													<span class="pull-right text-dark fs-14 ms-2">120 Proprties</span>
-												</p>
-												<!-- <div class="progress mb-4" style="height:10px">
-													<div class="progress-bar bg-primary progress-animated" style="width:40%; height:10px;" role="progressbar">
-														<span class="sr-only">40% Complete</span>
-													</div>
-												</div> -->
-
-												<p class="mb-2 d-flex align-items-center  fs-16 text-black font-w500">Maisontte
-													<span class="pull-right text-dark fs-14 ms-2">120 Proprties</span>
-												</p>
-												<!-- <div class="progress mb-4" style="height:10px">
-													<div class="progress-bar bg-primary progress-animated" style="width:40%; height:10px;" role="progressbar">
-														<span class="sr-only">40% Complete</span>
-													</div>
-												</div> -->
-
-												<p class="mb-2 d-flex align-items-center  fs-16 text-black font-w500">Penthouse
-													<span class="pull-right text-dark fs-14 ms-2">120 Proprties</span>
-												</p>
-												<!-- <div class="progress mb-4" style="height:10px">
-													<div class="progress-bar bg-primary progress-animated" style="width:40%; height:10px;" role="progressbar">
-														<span class="sr-only">40% Complete</span>
-													</div>
-												</div> -->
-
-												<p class="mb-2 d-flex align-items-center  fs-16 text-black font-w500">Residential Land
-													<span class="pull-right text-dark fs-14 ms-2">120 Proprties</span>
-												</p>
-												<!-- <div class="progress mb-4" style="height:10px">
-													<div class="progress-bar bg-primary progress-animated" style="width:40%; height:10px;" role="progressbar">
-														<span class="sr-only">40% Complete</span>
-													</div>
-												</div> -->
-
-												<p class="mb-2 d-flex align-items-center  fs-16 text-black font-w500">Commercial Land
-													<span class="pull-right text-dark fs-14 ms-2">120 Proprties</span>
-												</p>
-												<!-- <div class="progress mb-4" style="height:10px">
-													<div class="progress-bar bg-primary progress-animated" style="width:40%; height:10px;" role="progressbar">
-														<span class="sr-only">40% Complete</span>
-													</div>
-												</div> -->
-
-												<p class="mb-2 d-flex align-items-center  fs-16 text-black font-w500">Office
-													<span class="pull-right text-dark fs-14 ms-2">120 Proprties</span>
-												</p>
-												<!-- <div class="progress mb-4" style="height:10px">
-													<div class="progress-bar bg-primary progress-animated" style="width:40%; height:10px;" role="progressbar">
-														<span class="sr-only">40% Complete</span>
-													</div>
-												</div> -->
-
-												<p class="mb-2 d-flex align-items-center  fs-16 text-black font-w500">Abuja
-													<span class="pull-right text-dark fs-14 ms-2">120 Proprties</span>
-												</p>
-												<!-- <div class="progress mb-4" style="height:10px">
-													<div class="progress-bar bg-primary progress-animated" style="width:40%; height:10px;" role="progressbar">
-														<span class="sr-only">40% Complete</span>
-													</div>
-												</div> -->
-
-												<p class="mb-2 d-flex align-items-center  fs-16 text-black font-w500">Lagos Island
-													<span class="pull-right text-dark fs-14 ms-2">120 Proprties</span>
-												</p>
-												<!-- <div class="progress mb-4" style="height:10px">
-													<div class="progress-bar bg-primary progress-animated" style="width:40%; height:10px;" role="progressbar">
-														<span class="sr-only">40% Complete</span>
-													</div>
-												</div> -->
-
-												<p class="mb-2 d-flex align-items-center  fs-16 text-black font-w500">Lagos Mainland
-													<span class="pull-right text-dark fs-14 ms-2">120 Proprties</span>
-												</p>
-												<!-- <div class="progress mb-4" style="height:10px">
-													<div class="progress-bar bg-primary progress-animated" style="width:40%; height:10px;" role="progressbar">
-														<span class="sr-only">40% Complete</span>
-													</div>
-												</div> -->
-
-												<p class="mb-2 d-flex align-items-center  fs-16 text-black font-w500">Ibadan
-													<span class="pull-right text-dark fs-14 ms-2">120 Proprties</span>
-												</p>
-												<!-- <div class="progress mb-4" style="height:10px">
-													<div class="progress-bar bg-primary progress-animated" style="width:40%; height:10px;" role="progressbar">
-														<span class="sr-only">40% Complete</span>
-													</div>
-												</div> -->
-
-												<p class="mb-2 d-flex align-items-center  fs-16 text-black font-w500">Dubai
-													<span class="pull-right text-dark fs-14 ms-2">120 Proprties</span>
-												</p>
-												<!-- <div class="progress mb-4" style="height:10px">
-													<div class="progress-bar bg-primary progress-animated" style="width:40%; height:10px;" role="progressbar">
-														<span class="sr-only">40% Complete</span>
-													</div>
-												</div> -->
-											</div>
 										</div>
 									</div>
 								</div>
