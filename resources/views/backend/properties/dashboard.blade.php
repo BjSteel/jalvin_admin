@@ -108,7 +108,7 @@
 														<span class="pull-right text-dark fs-14 ms-2">{{ $apartment }} Properties</span>
 													</p>
 													<p class="mb-2 d-flex align-items-center fs-16 text-black font-w500">Maisontte
-														<span class="pull-right text-dark fs-14 ms-2">{{ $maisontte }} Properties</span>
+														<span class="pull-right text-dark fs-14 ms-2">{{ $maisonette }} Properties</span>
 													</p>
 													<p class="mb-2 d-flex align-items-center fs-16 text-black font-w500">Penthouse
 														<span class="pull-right text-dark fs-14 ms-2">{{ $penthouse }} Properties</span>
