@@ -99,7 +99,7 @@ if (!function_exists('storage_asset')) {
 
 function countWordOccurrences($data_type, $column, $word){
 	// Initialize an array to store the counts
-	$wordCounts = [];
+	$wordCounts = 0;
 
 	// Get all properties from the database
 	$properties = Property::all();
@@ -129,9 +129,9 @@ function countWordOccurrences($data_type, $column, $word){
 		}
 
 		// Store the count for the current property
-		$wordCounts[$property->id] = $count;
+		$wordCounts = $count;
 	}
 
 	// Return the word counts
-	return number_format($wordCounts[]);
+	return number_format($wordCounts);
 }
