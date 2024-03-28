@@ -67,7 +67,7 @@
 		<div class="nav-body">
 			<div class="nav-contents">
 				<div class="list-navs">
-				<li><a href="{{ route('view.homr') }}" >Home</a></li>
+				<li><a href="{{ route('view.home') }}" >Home</a></li>
 					<li><a href="{{ route('view.about') }}">Meet Jennifer</a></li>
 					<li><a href="{{ route('view.search') }}">Property Search</a></li>
 					<li><a href="{{ route('view.inquiry') }}">Inquiry</a></li>
