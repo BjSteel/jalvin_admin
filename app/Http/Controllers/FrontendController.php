@@ -14,7 +14,7 @@ class FrontendController extends Controller
         return view('frontend.about');
     }
 
-    function serach(){
+    function search(){
         return view('frontend.search');
     }
 
