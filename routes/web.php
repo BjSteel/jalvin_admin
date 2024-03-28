@@ -12,10 +12,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'FrontendController@index')->name('view.home'); 
-Route::get('/', 'FrontendController@about')->name('view.about'); 
-Route::get('/', 'FrontendController@contact')->name('view.contact'); 
-Route::get('/', 'FrontendController@search')->name('view.search'); 
-Route::get('/', 'FrontendController@inquiry')->name('view.inquiry'); 
+Route::get('/about', 'FrontendController@about')->name('view.about'); 
+Route::get('/contact', 'FrontendController@contact')->name('view.contact'); 
+Route::get('/search', 'FrontendController@search')->name('view.search'); 
+Route::get('/inquiry', 'FrontendController@inquiry')->name('view.inquiry'); 
 
 
 Route::match(['get', 'post'], '/admin/login', 'AuthController@login')->name('auth.login');
