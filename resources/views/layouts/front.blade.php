@@ -1,7 +1,5 @@
 <!doctype html>
 <html lang="en">
-     
-<!-- Mirrored from preview.colorlib.com/theme/props/{{ route('view.home') }} by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Feb 2023 01:32:21 GMT -->
 <head>
 
 <meta charset="utf-8">
@@ -54,7 +52,7 @@
 				<div class="logo"><a href="{{ route('view.home') }}"><img src="{{ asset('images/jalvinlogofooter.png')  }}" alt=""></a></div>
 	
 				<div class="nav-links">
-					<li><a href="{{ route('view.homr') }}" class="nav-item">home</a></li>
+					<li><a href="{{ route('view.home') }}" class="nav-item">home</a></li>
 					<li><a href="{{ route('view.about') }}" class="nav-item">Meet Jennifer</a></li>
 					<li><a href="{{ route('view.search') }}" class="nav-item">property listings</a></li>
 					<li><a href="{{ route('view.inquiry') }}" class="nav-item">inquiry</a></li>
