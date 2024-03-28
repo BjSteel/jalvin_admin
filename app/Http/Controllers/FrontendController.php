@@ -9,4 +9,20 @@ class FrontendController extends Controller
     function index(){
         return view('frontend.home');
     }
+
+    function about(){
+        return view('frontend.about');
+    }
+
+    function serach(){
+        return view('frontend.search');
+    }
+
+    function inquiry(){
+        return view('frontend.inquiry');
+    }
+
+    function contact(){
+        return view('frontend.contact');
+    }
 }

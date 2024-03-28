@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
      
-<!-- Mirrored from preview.colorlib.com/theme/props/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Feb 2023 01:32:21 GMT -->
+<!-- Mirrored from preview.colorlib.com/theme/props/{{ route('view.home') }} by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Feb 2023 01:32:21 GMT -->
 <head>
 
 <meta charset="utf-8">
@@ -51,14 +51,14 @@
 <div class="main-header" id="headers">
 		<header>
 			<div class="header-content">
-				<div class="logo"><a href="index.html"><img src="{{ asset('images/jalvinlogofooter.png')  }}" alt=""></a></div>
+				<div class="logo"><a href="{{ route('view.home') }}"><img src="{{ asset('images/jalvinlogofooter.png')  }}" alt=""></a></div>
 	
 				<div class="nav-links">
-					<li><a href="index.html" class="nav-item">home</a></li>
-					<li><a href="about.html" class="nav-item">Meet Jennifer</a></li>
-					<li><a href="homesearch.html" class="nav-item">property listings</a></li>
-					<li><a href="inquiry.html" class="nav-item">inquiry</a></li>
-					<li><a href="contact.html" class="nav-item">Contact me</a></li>
+					<li><a href="{{ route('view.homr') }}" class="nav-item">home</a></li>
+					<li><a href="{{ route('view.about') }}" class="nav-item">Meet Jennifer</a></li>
+					<li><a href="{{ route('view.search') }}" class="nav-item">property listings</a></li>
+					<li><a href="{{ route('view.inquiry') }}" class="nav-item">inquiry</a></li>
+					<li><a href="{{ route('view.contact') }}" class="nav-item">Contact me</a></li>
 					<li><a href="tel:+2349021348995" class="nav-item tel">(+234)9021348995</a></li>
 				</div>
 				<button class="toggle"><i class='bx bx-menu-alt-right' id="navbar_toggle"></i></button>
@@ -69,11 +69,11 @@
 		<div class="nav-body">
 			<div class="nav-contents">
 				<div class="list-navs">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">Meet Jennifer</a></li>
-					<li><a href="homesearch.html">Property Search</a></li>
-					<li><a href="inquiry.html">inquiry</a></li>
-					<li><a href="contact.html">contact</a></li>
+				<li><a href="{{ route('view.homr') }}" >Home</a></li>
+					<li><a href="{{ route('view.about') }}">Meet Jennifer</a></li>
+					<li><a href="{{ route('view.search') }}">Property Search</a></li>
+					<li><a href="{{ route('view.inquiry') }}">Inquiry</a></li>
+					<li><a href="{{ route('view.contact') }}">Contact</a></li>
 					<li><a href="+2349021348995">(+234)9021348995</a></li>
 				</div>
 			</div>
@@ -128,7 +128,7 @@
 <div class="row mt-5">
 	<div class="col-lg-3 col-xs-12 mb-4">
 		<div class="footer-logo mb-4">
-				<a href="index.html"><img src="{{ asset('images/jalvinlogofooter.png')  }}" alt=""></a>
+				<a href="{{ route('view.home') }}"><img src="{{ asset('images/jalvinlogofooter.png')  }}" alt=""></a>
 				</div>
 		</div>
 

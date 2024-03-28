@@ -11,7 +11,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::match(['get', 'post'], '/', 'FrontendController@index')->name('view.home'); 
+Route::get('/', 'FrontendController@index')->name('view.home'); 
+Route::get('/', 'FrontendController@about')->name('view.about'); 
+Route::get('/', 'FrontendController@contact')->name('view.contact'); 
+Route::get('/', 'FrontendController@search')->name('view.search'); 
+Route::get('/', 'FrontendController@inquiry')->name('view.inquiry'); 
 
 
 Route::match(['get', 'post'], '/admin/login', 'AuthController@login')->name('auth.login');
